@@ -20,8 +20,8 @@ vim.o.swapfile = false
 vim.o.writebackup = false
 
 -- UI options
-vim.o.relativenumber = true
-vim.o.number = true
+vim.o.relativenumber = false
+vim.o.number = false
 vim.o.cursorline = false
 vim.o.guicursor = vim.o.guicursor .. ',a:blinkon0'
 vim.opt.fillchars = { eob = " " }

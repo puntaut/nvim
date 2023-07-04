@@ -8,10 +8,16 @@ require("trouble").setup{
 }
 
 local signs = {
-  Error = "",
-  Warn = "",
-  Info = "",
-  Hint = "",
+
+  -- Error = "",
+  -- Warn = "",
+  -- Info = "",
+  -- Hint = "",
+
+  Error = "",
+  Warn = "",
+  Info = "",
+  Hint = "",
 }
 
 for type, icon in pairs(signs) do
