@@ -26,17 +26,12 @@ end
 
 require("nvim-tree").setup{
   sort_by = "case_sensitive",
-  view = {
-    width = 30,
-  },
   renderer = {
     group_empty = true,
   },
-  on_attach = on_attach,
+  on_attach = on_attach, -- Don't Delete!!
   disable_netrw = true,
   hijack_netrw = true,
-  respect_buf_cwd = true,
-  sync_root_with_cwd = true,
   view = {
     relativenumber = false,
     float = {
