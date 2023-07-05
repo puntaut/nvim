@@ -1,32 +1,20 @@
 vim.g.indent_blankline_use_treesitter = true
 vim.opt.list = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#333333 gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#444444 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#555555 gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent4 guifg=#666666 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent5 guifg=#777777 gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent6 guifg=#888888 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent7 guifg=#999999 gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent8 guifg=#aaaaaa gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent9 guifg=#bbbbbb gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent10 guifg=#cccccc gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent11 guifg=#dddddd gui=nocombine]]
--- vim.cmd [[highlight IndentBlanklineIndent12 guifg=#eeeeee gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent13 guifg=#ffffff gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent0 guifg=#3e3e3e gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#5c5c5c gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#7a7a7a gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent3 guifg=#989898 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#b6b6b6 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent5 guifg=#d4d4d4 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent6 guifg=#f2f2f2 gui=nocombine]]
 require("indent_blankline").setup{
   char_highlight_list = {
+    "IndentBlanklineIndent0",
     "IndentBlanklineIndent1",
-    -- "IndentBlanklineIndent2",
+    "IndentBlanklineIndent2",
     "IndentBlanklineIndent3",
-    -- "IndentBlanklineIndent4",
+    "IndentBlanklineIndent4",
     "IndentBlanklineIndent5",
-    -- "IndentBlanklineIndent6",
-    "IndentBlanklineIndent7",
-    -- "IndentBlanklineIndent8",
-    "IndentBlanklineIndent9",
-    -- "IndentBlanklineIndent10",
-    "IndentBlanklineIndent11",
-    -- "IndentBlanklineIndent12",
-    "IndentBlanklineIndent13",
+    "IndentBlanklineIndent6",
   },
 }
