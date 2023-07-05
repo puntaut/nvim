@@ -45,7 +45,6 @@ local plugins = {
     'numToStr/Comment.nvim',
     'yamatsum/nvim-cursorline',
     'kylechui/nvim-surround',
-    'echasnovski/mini.ai',
     'fedepujol/move.nvim',
     'monaqa/dial.nvim',
     'mg979/vim-visual-multi',

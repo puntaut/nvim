@@ -88,8 +88,8 @@ map('n', '~', '~h', {})
 map('n', '~~', 'V~', {})
 
 -- Scroll Up and Scroll Down
-map('', 'E', '5kzz', {})
-map('', 'I', '5jzz', {})
+map('', 'E', '2kzz', {})
+map('', 'I', '2jzz', {})
 
 -- Save and Close Buffer
 map('', 'Q', ':bd<CR>', {})
