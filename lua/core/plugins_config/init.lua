@@ -14,7 +14,6 @@ require("core.plugins_config.surround")
 require("core.plugins_config.move")
 require("core.plugins_config.dial")
 require("core.plugins_config.nvim-cursorline")
-require("core.plugins_config.hop")
 
 -- Indentation and Formatting
 require("core.plugins_config.trim")

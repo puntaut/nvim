@@ -48,7 +48,6 @@ local plugins = {
     'fedepujol/move.nvim',
     'monaqa/dial.nvim',
     'mg979/vim-visual-multi',
-    'mistweaverco/hop.nvim',
   },
 
   -- Indentation and Formatting
