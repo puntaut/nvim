@@ -25,6 +25,7 @@ require("core.plugins_config.nvim-web-devicons")
 
 -- File Explorer and Fuzzy Finder
 require("core.plugins_config.nvim-tree")
+require("core.plugins_config.oil")
 require("core.plugins_config.telescope")
 
 -- Statusline and Bufferline
