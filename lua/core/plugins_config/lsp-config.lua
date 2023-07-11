@@ -1,11 +1,12 @@
 require("mason").setup()
-require'lspconfig'.pyright.setup{}
-require("mason-lspconfig").setup{
-  ensure_installed = { "lua_ls", "pyright", "tsserver", "rust_analyzer" },
-}
+-- require'lspconfig'.pyright.setup{}
+-- require("mason-lspconfig").setup{
+--   ensure_installed = { "lua_ls", "pyright", "tsserver", "rust_analyzer" },
+-- }
 
--- Setup language servers.
 local lspconfig = require('lspconfig')
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- Setup language servers.
 lspconfig.lua_ls.setup {
   settings = {
     Lua = {
@@ -25,31 +26,31 @@ lspconfig.lua_ls.setup {
       },
     },
   },
+  capabilities = capabilities,
 }
+lspconfig.pyright.setup {capabilities = capabilities}
+lspconfig.tsserver.setup {capabilities = capabilities}
+lspconfig.rust_analyzer.setup {capabilities = capabilities}
+lspconfig.clangd.setup {capabilities = capabilities}
 
-lspconfig.pyright.setup {}
-lspconfig.tsserver.setup {}
-lspconfig.rust_analyzer.setup {}
-lspconfig.clangd.setup {}
-
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['pyright'].setup {capabilities = capabilities}
-  require('lspconfig')['tsserver'].setup {capabilities = capabilities}
-  require('lspconfig')['rust_analyzer'].setup {capabilities = capabilities}
-  require('lspconfig')['lua_ls'].setup {capabilities = capabilities}
-  require('lspconfig')['clangd'].setup {capabilities = capabilities}
-
--- Null_ls
+-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+--   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+--   require('lspconfig')['pyright'].setup {capabilities = capabilities}
+--   require('lspconfig')['tsserver'].setup {capabilities = capabilities}
+--   require('lspconfig')['rust_analyzer'].setup {capabilities = capabilities}
+--   require('lspconfig')['lua_ls'].setup {capabilities = capabilities}
+--   require('lspconfig')['clangd'].setup {capabilities = capabilities}
+--
+-- -- Null_ls
 
 local null_ls = require("null-ls")
 
 null_ls.setup({
-    sources = {
-        null_ls.builtins.formatting.stylua,
-        null_ls.builtins.diagnostics.eslint,
-        null_ls.builtins.completion.spell,
-    },
+  sources = {
+      null_ls.builtins.formatting.stylua,
+      null_ls.builtins.diagnostics.eslint,
+      null_ls.builtins.completion.spell,
+  },
 })
 
 -- CMP
