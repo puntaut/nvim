@@ -41,6 +41,9 @@ require("core.plugins_config.lsp-config")
 require("core.plugins_config.lsp-colors")
 require("core.plugins_config.trouble")
 
+-- Debugger
+require("core.plugins_config.nvim-dap")
+
 -- Terminal
 require("core.plugins_config.toggleterm")
 
