@@ -1,5 +1,3 @@
-vim.opt.clipboard:append("unnamedplus")
-
 -- Mapleader
 vim.g.mapleader = ' '
 
