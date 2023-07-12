@@ -8,9 +8,4 @@ vim.diagnostic.config({
   virtual_lines = false,
 })
 
-vim.keymap.set(
-  "",
-  "<C-.>",
-  require("lsp_lines").toggle,
-  { desc = "Toggle lsp_lines" }
-)
+vim.keymap.set( "", "<C-.>", require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })
