@@ -93,6 +93,7 @@ map('', 'I', '2jzz', {})
 
 -- Save and Close Buffer
 map('', 'Q', ':bd<CR>', {})
+map('', 'FQ', ':q!<CR>', {})
 map('', 'W', ':w<CR>', {})
 
 -- Tab Identation
