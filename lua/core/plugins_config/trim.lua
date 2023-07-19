@@ -11,5 +11,3 @@ require('trim').setup({
   -- if you want to disable trim on write by default
   trim_on_write = true,
 })
-
-vim.keymap.set('n', '<C-t>', ':Trim<CR>')

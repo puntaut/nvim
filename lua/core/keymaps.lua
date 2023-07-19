@@ -17,6 +17,7 @@ map('', '<leader>n', '<C-w>h', {})
 map('', '<leader>e', '<C-w>k', {})
 map('', '<leader>i', '<C-w>j', {})
 map('', '<leader>o', '<C-w>l', {})
+map('', '<leader>q', '<C-w>o', {})
 
 -- Word Navigation
 map('', 'O', 'w', {})
@@ -78,6 +79,9 @@ map('', 'l', 'o<esc>', {})
 map('', 'L', 'O<esc>', {})
 map('', 'm', 'o', {})
 map('', 'M', 'O', {})
+
+-- Show Me Documents
+map('', 'J', 'K', {})
 
 -- Next and Previous
 map('', 'h', 'n', {})
