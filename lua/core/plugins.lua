@@ -148,6 +148,10 @@ local plugins = {
     -- Git
     'lewis6991/gitsigns.nvim',
   },
+  {
+    -- Start-Up Time
+    'dstein64/vim-startuptime',
+  },
 }
 
 require("lazy").setup(plugins, opt)
