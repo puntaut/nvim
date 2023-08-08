@@ -24,7 +24,7 @@ local function on_attach(bufnr)
   vim.keymap.set('n', '<esc>', api.tree.close, { buffer = bufnr })
 end
 
-require("nvim-tree").setup{
+require("nvim-tree").setup {
   sort_by = "case_sensitive",
   renderer = {
     group_empty = true,
@@ -32,6 +32,12 @@ require("nvim-tree").setup{
   on_attach = on_attach, -- Don't Delete!!
   disable_netrw = true,
   hijack_netrw = true,
+  sync_root_with_cwd = false,
+  actions = {
+    change_dir = {
+      global = true
+    }
+  },
   view = {
     relativenumber = false,
     float = {
@@ -53,7 +59,7 @@ require("nvim-tree").setup{
           width = window_w_int,
           height = window_h_int,
         }
-        end,
+      end,
     },
     width = function()
       return math.floor(vim.opt.columns:get() * WIDTH_RATIO)

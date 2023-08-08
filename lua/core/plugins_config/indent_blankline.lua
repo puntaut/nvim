@@ -1,6 +1,7 @@
 vim.g.indent_blankline_use_treesitter = true
 vim.opt.list = true
-vim.cmd [[highlight IndentBlanklineIndent0 guifg=#4f4f4f gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent11 guifg=#3f3c56 gui=nocombine]]
+-- vim.cmd [[highlight IndentBlanklineIndent0 guifg=#4f4f4f gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#666666 gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent2 guifg=#7d7d7d gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent3 guifg=#949494 gui=nocombine]]
@@ -10,7 +11,8 @@ vim.cmd [[highlight IndentBlanklineIndent0 guifg=#4f4f4f gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent7 guifg=#f0f0f0 gui=nocombine]]
 require("indent_blankline").setup{
   char_highlight_list = {
-    "IndentBlanklineIndent0",
+    "IndentBlanklineIndent11",
+    -- "IndentBlanklineIndent0",
   --   "IndentBlanklineIndent1",
   --   "IndentBlanklineIndent2",
   --   "IndentBlanklineIndent3",

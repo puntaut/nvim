@@ -19,5 +19,3 @@ require("catppuccin").setup {
       },
     }
 }
-
--- vim.cmd.colorscheme "oxocarbon"
