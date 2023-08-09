@@ -65,7 +65,8 @@ map('', 's', '"_s', {})
 map('', 'S', '"+s', {})
 
 -- Yank to System Clipboard
-map('', 'y', '"+y', {})
+map('x', 'y', 'ma"+y`a', {})
+map('n', 'y', '"+y', {})
 map('n', 'yy', '"+yy', {})
 
 -- Paste from System Clipboard
@@ -104,5 +105,5 @@ map('', 'W', ':w<CR>', {})
 map('n', '<Tab>', 'i<Tab>', {})
 
 -- Insert Mode Delete
-map('i', '<M-BS>','<C-g>u<Cmd>normal! bdw<CR>', {})
-map('c', '<M-BS>','<C-g>u<Cmd>normal! bdw<CR>', {})
+map('i', '<M-BS>', '<C-g>u<Cmd>normal! bdw<CR>', {})
+map('c', '<M-BS>', '<C-g>u<Cmd>normal! bdw<CR>', {})

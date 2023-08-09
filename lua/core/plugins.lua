@@ -111,8 +111,8 @@ local plugins = {
     'jose-elias-alvarez/null-ls.nvim',
     'folke/lsp-colors.nvim',
     -- snippets
-    'hrsh7th/vim-vsnip',
-    'hrsh7th/vim-vsnip-integ',
+    'saadparwaiz1/cmp_luasnip',
+    'L3MON4D3/LuaSnip',
     -- AutoCompletion
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
