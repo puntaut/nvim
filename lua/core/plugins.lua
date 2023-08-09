@@ -37,6 +37,7 @@ local plugins = {
     -- TextObjects
     'nvim-treesitter/nvim-treesitter-textobjects',
     'chrisgrieser/nvim-various-textobjs',
+    'gaving/vim-textobj-argument',
   },
 
   -- Editing and Motion

@@ -1,6 +1,5 @@
 require("various-textobjs").setup{
   disabledKeymaps = {
-    "n",
     "ik",
     "ak",
     "iv",
@@ -8,6 +7,10 @@ require("various-textobjs").setup{
     "L",
     "in",
     "an",
+    "iz",
+    "az",
+    "im",
+    "am",
     "!",
     "gw",
     "gW",
@@ -56,12 +59,5 @@ keymap({ "o", "x" }, "rk", "<cmd>lua require('various-textobjs').restOfIndentati
 -- Entire Buffer
 keymap({ "o", "x" }, "gG", "<cmd>lua require('various-textobjs').entireBuffer()<CR>")
 
--- Chain Member
-keymap({ "o", "x" }, "km", "<cmd>lua require('various-textobjs').chainMember(true)<CR>")
-keymap({ "o", "x" }, "am", "<cmd>lua require('various-textobjs').chainMember(false)<CR>")
-
--- Closed Fold
-keymap({ "o", "x" }, "kz", "<cmd>lua require('various-textobjs').closedFold(true)<CR>")
-keymap({ "o", "x" }, "az", "<cmd>lua require('various-textobjs').closedFold(false)<CR>")
-
-
+-- Near EoL
+keymap({ "o", "x" }, "E", "<cmd>lua require('various-textobjs').nearEoL()<CR>")
