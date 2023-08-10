@@ -1,4 +1,4 @@
-vim.opt.clipboard:append("unnamedplus")
+-- vim.opt.clipboard:append("unnamedplus")
 
 -- Mapleader
 vim.g.mapleader = ' '
@@ -18,6 +18,9 @@ vim.opt.iskeyword:append("-")
 vim.o.backup = false
 vim.o.swapfile = false
 vim.o.writebackup = false
+
+-- Searching
+vim.o.incsearch = true
 
 -- UI options
 vim.o.relativenumber = true

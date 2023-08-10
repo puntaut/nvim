@@ -49,29 +49,38 @@ map('', '|', '@z', {})
 map('', '&', '@x', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'd', '"_d', {})
-map('n', 'dd', '"_dd', {})
+-- map('', 'd', '"_d', {})
+-- map('n', 'dd', '"_dd', {})
+map('', 'd', '"0d', {})
+map('n', 'dd', '"0dd', {})
 map('', 'D', '"+d', {})
 map('n', 'DD', '"+dd', {})
 
 -- Change but not Yank to System Clipboard
-map('', 'c', '"_c', {})
-map('n', 'cc', '"_cc', {})
+-- map('', 'c', '"_c', {})
+-- map('n', 'cc', '"_cc', {})
+map('', 'c', '"0c', {})
+map('n', 'cc', '"0cc', {})
 map('', 'C', '"+c', {})
 map('n', 'CC', '"+cc', {})
 
 -- Change but not Yank to System Clipboard
-map('', 's', '"_s', {})
+-- map('', 's', '"_s', {})
+map('', 's', '"0s', {})
 map('', 'S', '"+s', {})
 
 -- Yank to System Clipboard
-map('x', 'y', 'ma"+y`a', {})
-map('n', 'y', '"+y', {})
-map('n', 'yy', '"+yy', {})
+map('x', 'Y', 'ma"+y`a', {})
+map('n', 'Y', '"+y', {})
+map('n', 'YY', '"+yy', {})
+map('x', 'y', 'ma"0y`a', {})
+map('n', 'y', '"0y', {})
+map('n', 'yy', '"0yy', {})
 
 -- Paste from System Clipboard
-map('', 'p', '"+p', {})
-map('', 'P', '"+P', {})
+map('', 'p', '"0p', {})
+map('', 'P', '"0P', {})
+map('', '<C-p>', '"+p', {})
 
 -- Insert Mode and Insert Line
 map('', 'k', 'i', {})
