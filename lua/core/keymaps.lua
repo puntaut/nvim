@@ -17,7 +17,6 @@ map('', '<leader>n', '<C-w>h', {})
 map('', '<leader>e', '<C-w>k', {})
 map('', '<leader>i', '<C-w>j', {})
 map('', '<leader>o', '<C-w>l', {})
-map('', '<leader>q', '<C-w>o', {})
 
 -- Word Navigation
 map('', 'O', 'w', {})
@@ -30,23 +29,23 @@ map('n', '<', 'v<', {})
 map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('', 'U', '<C-r>', {})
+map('n', 'U', '<C-r>', {})
 
--- Registered Yank and Deleted {z,x}
-map('', 'xy', '"xy', {})
-map('', 'xD', '"xd', {})
-map('', 'zy', '"zy', {})
-map('', 'zD', '"zd', {})
+-- -- Registered Yank and Deleted {z,x}
+-- map('', 'xy', '"xy', {})
+-- map('', 'xD', '"xd', {})
+-- map('', 'zy', '"zy', {})
+-- map('', 'zD', '"zd', {})
 
--- Registered Paste {z,x}
-map('', 'xp', '"xp', {})
-map('', 'xP', '"xP', {})
-map('', 'zp', '"zp', {})
-map('', 'zP', '"zP', {})
+-- -- Registered Paste {z,x}
+-- map('', 'xp', '"xp', {})
+-- map('', 'xP', '"xP', {})
+-- map('', 'zp', '"zp', {})
+-- map('', 'zP', '"zP', {})
 
--- Executing Registered Command {z,x}
-map('', '|', '@z', {})
-map('', '&', '@x', {})
+-- -- Executing Registered Command {z,x}
+-- map('', '|', '@z', {})
+-- map('', '&', '@x', {})
 
 -- Delete and Yank to System Clipboard
 -- map('', 'd', '"_d', {})

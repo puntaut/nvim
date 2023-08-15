@@ -4,7 +4,7 @@ require('Comment').setup{
     ignore = nil,
     toggler = {
         line = 'gcc',
-        block = 'gbc',
+        block = 'gbb',
     },
     opleader = {
         line = 'gc',

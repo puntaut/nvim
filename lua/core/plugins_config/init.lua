@@ -11,7 +11,6 @@ require("core.plugins_config.various-textobjs")
 -- Editing and Motion
 require("core.plugins_config.comment")
 require("core.plugins_config.surround")
-require("core.plugins_config.move")
 require("core.plugins_config.dial")
 require("core.plugins_config.nvim-cursorline")
 
