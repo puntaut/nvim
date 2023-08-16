@@ -22,6 +22,12 @@ map('', '<leader>o', '<C-w>l', {})
 map('n', '<CR>', '"0ciw', {})
 map('n', '<S-CR>', '"+ciw', {})
 
+-- Code block Navigation
+map('n', '{', '{zz', {})
+map('n', '}', '}zz', {})
+map('n', '(', '(zz', {})
+map('n', ')', ')zz', {})
+
 -- Word Navigation
 map('', 'O', 'w', {})
 map('', 'N', 'b', {})
