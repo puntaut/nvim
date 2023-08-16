@@ -28,7 +28,7 @@ require("core.plugins_config.telescope")
 
 -- Statusline and Bufferline
 require("core.plugins_config.lualine")
-require("core.plugins_config.bufferline")
+-- require("core.plugins_config.bufferline")
 
 -- ZenMode
 require("core.plugins_config.zen-mode")

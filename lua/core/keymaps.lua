@@ -18,6 +18,10 @@ map('', '<leader>e', '<C-w>k', {})
 map('', '<leader>i', '<C-w>j', {})
 map('', '<leader>o', '<C-w>l', {})
 
+-- Change In Word Using Enter
+map('n', '<CR>', '"0ciw', {})
+map('n', '<S-CR>', '"+ciw', {})
+
 -- Word Navigation
 map('', 'O', 'w', {})
 map('', 'N', 'b', {})
