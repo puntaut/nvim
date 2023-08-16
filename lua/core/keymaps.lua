@@ -31,33 +31,13 @@ map('n', '>', 'v>', {})
 -- Redo in Normal Mode
 map('n', 'U', '<C-r>', {})
 
--- -- Registered Yank and Deleted {z,x}
--- map('', 'xy', '"xy', {})
--- map('', 'xD', '"xd', {})
--- map('', 'zy', '"zy', {})
--- map('', 'zD', '"zd', {})
-
--- -- Registered Paste {z,x}
--- map('', 'xp', '"xp', {})
--- map('', 'xP', '"xP', {})
--- map('', 'zp', '"zp', {})
--- map('', 'zP', '"zP', {})
-
--- -- Executing Registered Command {z,x}
--- map('', '|', '@z', {})
--- map('', '&', '@x', {})
-
 -- Delete and Yank to System Clipboard
--- map('', 'd', '"_d', {})
--- map('n', 'dd', '"_dd', {})
 map('', 'd', '"0d', {})
 map('n', 'dd', '"0dd', {})
 map('', 'D', '"+d', {})
 map('n', 'DD', '"+dd', {})
 
 -- Change but not Yank to System Clipboard
--- map('', 'c', '"_c', {})
--- map('n', 'cc', '"_cc', {})
 map('', 'c', '"0c', {})
 map('n', 'cc', '"0cc', {})
 map('', 'C', '"+c', {})
