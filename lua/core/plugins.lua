@@ -97,6 +97,7 @@ local plugins = {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
   'petertriho/nvim-scrollbar',
+  'kevinhwang91/nvim-hlslens',
 
   -- Language Server Protocal
   {

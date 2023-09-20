@@ -28,6 +28,7 @@
   "nvim-cursorline": { "branch": "main", "commit": "804f0023692653b2b2368462d67d2a87056947f9" },
   "nvim-dap": { "branch": "master", "commit": "b3d4408e29d924fe130c9397a7c3b3630b3ea671" },
   "nvim-dap-ui": { "branch": "master", "commit": "34160a7ce6072ef332f350ae1d4a6a501daf0159" },
+  "nvim-hlslens": { "branch": "main", "commit": "f0281591a59e95400babf61a96e59ba20e5c9533" },
   "nvim-lspconfig": { "branch": "master", "commit": "4266f9bb36b4fb09edd19b67d95043cf7ff88ddf" },
   "nvim-scrollbar": { "branch": "main", "commit": "35f99d559041c7c0eff3a41f9093581ceea534e8" },
   "nvim-surround": { "branch": "main", "commit": "1c2ef599abeeb98e40706830bcd27e90e259367a" },
