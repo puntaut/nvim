@@ -12,6 +12,7 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftround = true
 vim.o.smartindent = true
+vim.o.autoindent = true
 vim.opt.iskeyword:append("-")
 
 -- Backup options

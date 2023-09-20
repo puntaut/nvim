@@ -3,7 +3,7 @@ require("lsp_lines").setup()
 vim.diagnostic.config({
   signs = true,
   underline = true,
-  update_in_insert = false,
+  update_in_insert = true,
   virtual_text = false,
   virtual_lines = false,
 })

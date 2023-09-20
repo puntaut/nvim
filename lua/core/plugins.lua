@@ -67,9 +67,7 @@ local plugins = {
   {
     -- File Explorer
     'nvim-tree/nvim-tree.lua',
-    dependencies = {
-    "nvim-tree/nvim-web-devicons",
-    },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
     -- Fuzzy Finder
@@ -87,7 +85,7 @@ local plugins = {
     'folke/zen-mode.nvim',
   },
 
-  -- Statusline and Bufferline
+  -- Statusline, Bufferline and Scrallbar
   {
     -- Statusline
     'nvim-lualine/lualine.nvim',
@@ -98,6 +96,7 @@ local plugins = {
     'akinsho/bufferline.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
+  'petertriho/nvim-scrollbar',
 
   -- Language Server Protocal
   {
@@ -111,7 +110,10 @@ local plugins = {
     'folke/lsp-colors.nvim',
     -- snippets
     'saadparwaiz1/cmp_luasnip',
-    'L3MON4D3/LuaSnip',
+    {
+      'L3MON4D3/LuaSnip',
+      dependencies = { "rafamadriz/friendly-snippets" },
+    },
     -- AutoCompletion
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',

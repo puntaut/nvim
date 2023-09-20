@@ -7,16 +7,16 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Arrow Navigation
-map('', 'n', 'h', {})
+map('', 'd', 'h', {})
 map('', 'e', 'k', {})
-map('', 'i', 'j', {})
-map('', 'o', 'l', {})
+map('', 'a', 'j', {})
+map('', 'i', 'l', {})
 
 -- Window Navigation
-map('', '<leader>n', '<C-w>h', {})
+map('', '<leader>d', '<C-w>h', {})
 map('', '<leader>e', '<C-w>k', {})
-map('', '<leader>i', '<C-w>j', {})
-map('', '<leader>o', '<C-w>l', {})
+map('', '<leader>a', '<C-w>j', {})
+map('', '<leader>i', '<C-w>l', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"0ciw', {})
@@ -29,8 +29,8 @@ map('n', '(', '(zz', {})
 map('n', ')', ')zz', {})
 
 -- Word Navigation
-map('', 'O', 'w', {})
-map('', 'N', 'b', {})
+map('', 'I', 'w', {})
+map('', 'D', 'b', {})
 
 -- Indentation and Dedentation
 map('v', '<', '<gv', {})
@@ -42,10 +42,10 @@ map('n', '>', 'v>', {})
 map('n', 'U', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'd', '"0d', {})
-map('n', 'dd', '"0dd', {})
-map('', 'D', '"+d', {})
-map('n', 'DD', '"+dd', {})
+map('', 'j', '"0d', {})
+map('n', 'jj', '"0dd', {})
+map('', 'J', '"+d', {})
+map('n', 'JJ', '"+dd', {})
 
 -- Change but not Yank to System Clipboard
 map('', 'c', '"0c', {})
@@ -54,8 +54,7 @@ map('', 'C', '"+c', {})
 map('n', 'CC', '"+cc', {})
 
 -- Change but not Yank to System Clipboard
--- map('', 's', '"_s', {})
-map('', 's', '"0s', {})
+map('', 's', '"_s', {})
 map('', 'S', '"+s', {})
 
 -- Yank to System Clipboard
@@ -74,17 +73,19 @@ map('', '<C-p>', '"+p', {})
 -- Insert Mode and Insert Line
 map('', 'k', 'i', {})
 map('', 'K', 'I', {})
-map('', 'l', 'o<esc>', {})
-map('', 'L', 'O<esc>', {})
+map('', 'z', 'a', {})
+map('', 'Z', 'A', {})
+map('', 'h', 'o<esc>', {})
+map('', 'H', 'O<esc>', {})
 map('', 'm', 'o', {})
 map('', 'M', 'O', {})
 
 -- Show Me Documents
-map('', 'J', 'K', {})
+-- map('', 'J', 'K', {})
 
 -- Next and Previous
-map('', 'h', 'n', {})
-map('', 'H', 'N', {})
+-- map('', 'h', 'n', {})
+-- map('', 'H', 'N', {})
 
 -- Toggle Uppercase-Lowercase Canceling Moving Cursor
 map('n', '~', '~h', {})
@@ -92,7 +93,7 @@ map('n', '~~', 'V~', {})
 
 -- Scroll Up and Scroll Down
 map('', 'E', '2kzz', {})
-map('', 'I', '2jzz', {})
+map('', 'A', '2jzz', {})
 
 -- Save and Close Buffer
 map('', 'Q', ':bd<CR>', {})

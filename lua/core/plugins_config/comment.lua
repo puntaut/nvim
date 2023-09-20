@@ -11,9 +11,9 @@ require('Comment').setup{
         block = 'gb',
     },
     extra = {
-        above = 'gcL',
-        below = 'gcl',
-        eol = 'gcA',
+        above = 'gcM',
+        below = 'gcm',
+        eol = 'gcZ',
     },
     mappings = {
         basic = true,

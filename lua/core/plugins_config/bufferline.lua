@@ -29,6 +29,6 @@ vim.keymap.set('n', '<C-[>', ':BufferLineMovePrev<CR>')
 vim.keymap.set('n', '<C-]>', ':BufferLineMoveNext<CR>')
 
 -- Pick and Close Tab
-vim.keymap.set('n', '<leader>kk', ':BufferLineCloseOthers<CR>')
-vim.keymap.set('n', '<leader>km', ':BufferLineCloseRight<CR>')
-vim.keymap.set('n', '<leader>kh', ':BufferLineCloseLeft<CR>')
+vim.keymap.set('n', '<leader>pp', ':BufferLineCloseOthers<CR>')
+vim.keymap.set('n', '<leader>pg', ':BufferLineCloseRight<CR>')
+vim.keymap.set('n', '<leader>pc', ':BufferLineCloseLeft<CR>')

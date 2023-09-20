@@ -28,7 +28,8 @@ require("core.plugins_config.telescope")
 
 -- Statusline and Bufferline
 require("core.plugins_config.lualine")
--- require("core.plugins_config.bufferline")
+require("core.plugins_config.bufferline")
+require("core.plugins_config.nvim-scrollbar")
 
 -- ZenMode
 require("core.plugins_config.zen-mode")
@@ -37,6 +38,7 @@ require("core.plugins_config.zen-mode")
 require("core.plugins_config.lsp_lines")
 require("core.plugins_config.lsp-config")
 require("core.plugins_config.lsp-colors")
+require("core.plugins_config.null-ls")
 require("core.plugins_config.trouble")
 
 -- Debugger

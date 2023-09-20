@@ -1,12 +1,13 @@
 require("mason").setup()
-require("mason-lspconfig").setup{
+require("mason-lspconfig").setup {
   ensure_installed = { "lua_ls", "pyright", "tsserver", "rust_analyzer" },
 }
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- Setup language servers.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {capabilities = capabilities}
+lspconfig.pyright.setup { capabilities = capabilities }
 lspconfig.lua_ls.setup {
   settings = {
     Lua = {
@@ -16,6 +17,7 @@ lspconfig.lua_ls.setup {
       diagnostics = {
         globals = {
           'vim',
+          'TSConfig',
         },
       },
       workspace = {
@@ -28,9 +30,9 @@ lspconfig.lua_ls.setup {
   },
   capabilities = capabilities,
 }
-lspconfig.tsserver.setup {capabilities = capabilities}
-lspconfig.rust_analyzer.setup {capabilities = capabilities}
-lspconfig.clangd.setup {capabilities = capabilities}
+lspconfig.tsserver.setup { capabilities = capabilities }
+lspconfig.rust_analyzer.setup { capabilities = capabilities }
+lspconfig.clangd.setup { capabilities = capabilities }
 
 -- Null_ls
 local null_ls = require("null-ls")
@@ -43,7 +45,7 @@ null_ls.setup({
 })
 
 -- CMP
-local cmp = require'cmp'
+local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 cmp.setup({
   snippet = {
@@ -75,8 +77,7 @@ cmp.setup({
     end, { 'i', 's' }),
   }),
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' },
+    { name = 'LuaSnip' },
   }, {
     { name = 'buffer' },
   })
