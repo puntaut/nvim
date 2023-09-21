@@ -13,6 +13,7 @@ require("core.plugins_config.comment")
 require("core.plugins_config.surround")
 require("core.plugins_config.dial")
 require("core.plugins_config.nvim-cursorline")
+require("core.plugins_config.ultimate-autopair")
 
 -- Indentation and Formatting
 require("core.plugins_config.trim")
@@ -38,7 +39,7 @@ require("core.plugins_config.zen-mode")
 require("core.plugins_config.lsp_lines")
 require("core.plugins_config.lsp-config")
 require("core.plugins_config.lsp-colors")
-require("core.plugins_config.null-ls")
+-- require("core.plugins_config.null-ls")
 require("core.plugins_config.trouble")
 
 -- Debugger

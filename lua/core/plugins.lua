@@ -48,6 +48,7 @@ local plugins = {
     'kylechui/nvim-surround',
     'monaqa/dial.nvim',
     'mg979/vim-visual-multi',
+    'altermo/ultimate-autopair.nvim',
   },
 
   -- Indentation and Formatting
@@ -107,7 +108,14 @@ local plugins = {
   {
     'neovim/nvim-lspconfig',
     'williamboman/mason-lspconfig.nvim',
-    'jose-elias-alvarez/null-ls.nvim',
+    {
+      'jose-elias-alvarez/null-ls.nvim',
+      event = 'VeryLazy',
+    },
+    {
+      'creativenull/efmls-configs-nvim',
+      dependencies = { 'neovim/nvim-lspconfig' },
+    },
     'folke/lsp-colors.nvim',
     -- snippets
     'saadparwaiz1/cmp_luasnip',
