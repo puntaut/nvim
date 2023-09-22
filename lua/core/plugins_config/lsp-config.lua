@@ -12,9 +12,15 @@ local lspconfig = require("lspconfig")
 -- local eslint = require("efmls-configs.linters.eslint")
 -- local prettier = require("efmls-configs.formatters.prettier")
 -- local stylua = require("efmls-configs.formatters.stylua")
+local flake8 = require('efmls-configs.linters.flake8')
+local yapf = require('efmls-configs.formatters.yapf')
 local languages = {
   -- typescript = { eslint, prettier },
   -- lua = { stylua },
+  python = {
+    flake8,
+    yapf
+  },
 }
 local efmls_config = {
   filetypes = vim.tbl_keys(languages),

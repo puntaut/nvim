@@ -10,15 +10,15 @@ vim.cmd([[highlight IndentBlanklineIndent11 guifg=#3f3c56 gui=nocombine]])
 -- vim.cmd [[highlight IndentBlanklineIndent6 guifg=#d9d9d9 gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent7 guifg=#f0f0f0 gui=nocombine]]
 require("indent_blankline").setup({
-  char_highlight_list = {
-    "IndentBlanklineIndent11",
-    -- "IndentBlanklineIndent0",
-    --   "IndentBlanklineIndent1",
-    --   "IndentBlanklineIndent2",
-    --   "IndentBlanklineIndent3",
-    --   "IndentBlanklineIndent4",
-    --   "IndentBlanklineIndent5",
-    --   "IndentBlanklineIndent6",
-    --   "IndentBlanklineIndent7",
-  },
+    char_highlight_list = {
+        "IndentBlanklineIndent11",
+        -- "IndentBlanklineIndent0",
+        --   "IndentBlanklineIndent1",
+        --   "IndentBlanklineIndent2",
+        --   "IndentBlanklineIndent3",
+        --   "IndentBlanklineIndent4",
+        --   "IndentBlanklineIndent5",
+        --   "IndentBlanklineIndent6",
+        --   "IndentBlanklineIndent7",
+    },
 })

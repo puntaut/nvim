@@ -2,11 +2,11 @@ require("bufferline").setup()
 
 local bufferline = require('bufferline')
 bufferline.setup {
-  options = {
-    mode = "buffers", -- "buffers" | "tab" Changing to this to show Bufferline
-    separator_style = 'slant',
-    always_show_bufferline = false,
-  },
+    options = {
+        mode = "buffers", -- "buffers" | "tab" Changing to this to show Bufferline
+        separator_style = 'slant',
+        always_show_bufferline = false,
+    },
 }
 
 -- Pick Tab from Number
