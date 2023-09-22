@@ -31,5 +31,5 @@ vim.o.guicursor = vim.o.guicursor .. ',a:blinkon0'
 vim.opt.fillchars = { eob = " " }
 
 -- Left Column width
-vim.o.numberwidth = 2
+vim.o.numberwidth = 4
 vim.o.signcolumn = "yes:1"

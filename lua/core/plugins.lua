@@ -19,14 +19,9 @@ local plugins = {
 
         -- Others
         "catppuccin/nvim",
-        "sts10/vim-pink-moon",
-        "cocopon/iceberg.vim",
         "shaunsingh/nord.nvim",
-        "w0ng/vim-hybrid",
-        "joshdick/onedark.vim",
         "mhartington/oceanic-next",
         "projekt0n/github-nvim-theme",
-        "nikolvs/vim-sunbather",
         "nyoom-engineering/oxocarbon.nvim",
     },
 
@@ -42,12 +37,10 @@ local plugins = {
 
     -- Editing and Motion
     {
-        "tpope/vim-repeat",
         "numToStr/Comment.nvim",
         "yamatsum/nvim-cursorline",
         "kylechui/nvim-surround",
         "monaqa/dial.nvim",
-        "mg979/vim-visual-multi",
         "altermo/ultimate-autopair.nvim",
     },
 
@@ -109,10 +102,6 @@ local plugins = {
         "neovim/nvim-lspconfig",
         "williamboman/mason-lspconfig.nvim",
         {
-            "jose-elias-alvarez/null-ls.nvim",
-            event = "VeryLazy",
-        },
-        {
             "creativenull/efmls-configs-nvim",
             dependencies = { "neovim/nvim-lspconfig" },
         },
@@ -157,10 +146,6 @@ local plugins = {
     {
         -- Git
         "lewis6991/gitsigns.nvim",
-    },
-    {
-        -- Start-Up Time
-        "dstein64/vim-startuptime",
     },
 }
 

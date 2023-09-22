@@ -21,10 +21,10 @@ local function on_attach(bufnr)
     vim.keymap.del('n', 'I', { buffer = bufnr })
     vim.keymap.del('n', 'd', { buffer = bufnr })
     vim.keymap.del('n', 'a', { buffer = bufnr })
-    vim.keymap.set('n', 'j', api.fs.remove, { buffer = bufnr })
+    vim.keymap.set('n', 'k', api.fs.remove, { buffer = bufnr })
     vim.keymap.set('n', 'z', api.fs.create, { buffer = bufnr })
-    vim.keymap.set('n', 'h', api.node.navigate.parent_close, { buffer = bufnr })
-    vim.keymap.set('n', 'k', api.tree.change_root_to_node, { buffer = bufnr })
+    vim.keymap.set('n', 'l', api.node.navigate.parent_close, { buffer = bufnr })
+    vim.keymap.set('n', 'h', api.tree.change_root_to_node, { buffer = bufnr })
     vim.keymap.set('n', '<esc>', api.tree.close, { buffer = bufnr })
 end
 

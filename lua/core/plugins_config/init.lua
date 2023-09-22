@@ -39,7 +39,6 @@ require("core.plugins_config.zen-mode")
 require("core.plugins_config.lsp_lines")
 require("core.plugins_config.lsp-config")
 require("core.plugins_config.lsp-colors")
--- require("core.plugins_config.null-ls")
 require("core.plugins_config.trouble")
 
 -- Debugger

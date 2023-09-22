@@ -46,10 +46,10 @@ map('n', '>', 'v>', {})
 map('n', 'U', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'j', '"0d', {})
-map('n', 'jj', '"0dd', {})
-map('', 'J', '"+d', {})
-map('n', 'JJ', '"+dd', {})
+map('', 'k', '"0d', {})
+map('n', 'kk', '"0dd', {})
+map('', 'K', '"+d', {})
+map('n', 'KK', '"+dd', {})
 
 -- Change but not Yank to System Clipboard
 map('', 'c', '"0c', {})
@@ -59,7 +59,6 @@ map('n', 'CC', '"+cc', {})
 
 -- Change but not Yank to System Clipboard
 map('', 's', '"_s', {})
-map('', 'S', '"+s', {})
 
 -- Yank to System Clipboard
 map('x', 'Y', 'ma"+y`a', {})
@@ -75,12 +74,12 @@ map('', 'P', '"0P', {})
 map('', '<C-p>', '"+p', {})
 
 -- Insert Mode and Insert Line
-map('', 'k', 'i', {})
-map('', 'K', 'I', {})
+map('', 'h', 'i', {})
+map('', 'H', 'I', {})
 map('', 'z', 'a', {})
 map('', 'Z', 'A', {})
-map('', 'h', 'o<esc>', {})
-map('', 'H', 'O<esc>', {})
+map('', 'j', 'o<esc>', {})
+map('', 'J', 'O<esc>', {})
 map('', 'm', 'o', {})
 map('', 'M', 'O', {})
 

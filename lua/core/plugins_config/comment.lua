@@ -3,17 +3,17 @@ require("Comment").setup({
     sticky = true,
     ignore = nil,
     toggler = {
-        line = "gcc",
-        block = "gbb",
+        line = "occ",
+        block = "obb",
     },
     opleader = {
-        line = "gc",
-        block = "gb",
+        line = "oc",
+        block = "ob",
     },
     extra = {
-        above = "gcM",
-        below = "gcm",
-        eol = "gcZ",
+        above = "ocM",
+        below = "ocm",
+        eol = "ocZ",
     },
     mappings = {
         basic = true,

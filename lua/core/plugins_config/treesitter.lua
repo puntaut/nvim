@@ -6,9 +6,9 @@ require 'nvim-treesitter.configs'.setup {
             lookahead = true,
             keymaps = {
                 ["zf"] = "@function.outer",
-                ["kf"] = "@function.inner",
+                ["hf"] = "@function.inner",
                 ["zc"] = "@class.outer",
-                ["kc"] = { query = "@class.inner", desc = "Select inner part of a class region" },
+                ["hc"] = { query = "@class.inner", desc = "Select inner part of a class region" },
                 ["zs"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
             },
             selection_modes = {

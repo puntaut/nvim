@@ -34,17 +34,17 @@ require("various-textobjs").setup {
 local keymap = vim.keymap.set
 
 -- Indentation
-keymap({ "o", "x" }, "kk", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
-keymap({ "o", "x" }, "kK", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
-keymap({ "o", "x" }, "zk", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
-keymap({ "o", "x" }, "zK", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
+keymap({ "o", "x" }, "hh", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
+keymap({ "o", "x" }, "hH", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
+keymap({ "o", "x" }, "zh", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
+keymap({ "o", "x" }, "zH", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
 
 -- Subword
-keymap({ "o", "x" }, "kS", '<cmd>lua require("various-textobjs").subword(true)<CR>')
-keymap({ "o", "x" }, "zS", '<cmd>lua require("various-textobjs").subword(false)<CR>')
+keymap({ "o", "x" }, "hS", '<cmd>lua require("various-textobjs").subword(true)<CR>')
+keymap({ "o", "x" }, "hS", '<cmd>lua require("various-textobjs").subword(false)<CR>')
 
 -- Line
-keymap({ "o", "x" }, "kl", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")
+keymap({ "o", "x" }, "hl", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")
 keymap({ "o", "x" }, "zl", "<cmd>lua require('various-textobjs').lineCharacterwise(false)<CR>")
 
 -- Next Closing Bracket
@@ -54,7 +54,7 @@ keymap({ "o", "x" }, "zl", "<cmd>lua require('various-textobjs').lineCharacterwi
 keymap({ "o", "x" }, "rp", "<cmd>lua require('various-textobjs').restOfParagraph()<CR>")
 
 -- Rest of Indentation
-keymap({ "o", "x" }, "rk", "<cmd>lua require('various-textobjs').restOfIndentation()<CR>")
+keymap({ "o", "x" }, "rh", "<cmd>lua require('various-textobjs').restOfIndentation()<CR>")
 
 -- Entire Buffer
 keymap({ "o", "x" }, "gG", "<cmd>lua require('various-textobjs').entireBuffer()<CR>")
