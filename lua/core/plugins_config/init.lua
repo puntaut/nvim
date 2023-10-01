@@ -33,10 +33,7 @@ require("core.plugins_config.lualine")
 require("core.plugins_config.bufferline")
 require("core.plugins_config.noice")
 require("core.plugins_config.notify")
-require("core.plugins_config.nvim-scrollbar")
-
--- ZenMode
-require("core.plugins_config.zen-mode")
+require("core.plugins_config.scrollview")
 
 -- LSP
 require("core.plugins_config.lsp_lines")

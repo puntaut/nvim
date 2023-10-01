@@ -1,6 +1,5 @@
 -- Current Theme
 vim.o.termguicolors = true
-vim.cmd.colorscheme "rose-pine"
 
 -- Custom Catppuccin
 require("catppuccin").setup {
@@ -19,3 +18,8 @@ require("catppuccin").setup {
         },
     }
 }
+
+-- Custom Rose-pine
+require('rose-pine').setup({
+})
+vim.cmd.colorscheme "rose-pine"

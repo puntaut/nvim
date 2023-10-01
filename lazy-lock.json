@@ -30,10 +30,9 @@
   "nvim-cursorline": { "branch": "main", "commit": "804f0023692653b2b2368462d67d2a87056947f9" },
   "nvim-dap": { "branch": "master", "commit": "b3d4408e29d924fe130c9397a7c3b3630b3ea671" },
   "nvim-dap-ui": { "branch": "master", "commit": "34160a7ce6072ef332f350ae1d4a6a501daf0159" },
-  "nvim-hlslens": { "branch": "main", "commit": "f0281591a59e95400babf61a96e59ba20e5c9533" },
   "nvim-lspconfig": { "branch": "master", "commit": "7ec2ab0cb8f529708dba55964fb0a59d3cc21853" },
   "nvim-notify": { "branch": "master", "commit": "e4a2022f4fec2d5ebc79afa612f96d8b11c627b3" },
-  "nvim-scrollbar": { "branch": "main", "commit": "35f99d559041c7c0eff3a41f9093581ceea534e8" },
+  "nvim-scrollview": { "branch": "main", "commit": "b0737d036cfbb39e066d144702197eda0a4b6cf1" },
   "nvim-surround": { "branch": "main", "commit": "1c2ef599abeeb98e40706830bcd27e90e259367a" },
   "nvim-tree.lua": { "branch": "master", "commit": "113e0950c88b81b01d253d8f3da17bbd0e6716bb" },
   "nvim-treesitter": { "branch": "master", "commit": "dd4e2dbc002dfce109d621e8bdcd9d89438b0a32" },
@@ -52,6 +51,5 @@
   "telescope.nvim": { "branch": "master", "commit": "ffe90fac32122f401429b14d383137bd92a685d0" },
   "toggleterm.nvim": { "branch": "main", "commit": "61e8ad370d4da5d84c77e31671027bc094ac06ca" },
   "trouble.nvim": { "branch": "main", "commit": "3f85d8ed30e97ceeddbbcf80224245d347053711" },
-  "ultimate-autopair.nvim": { "branch": "v0.6", "commit": "cca248f35bb23c38596e7a33ba6cc607ef69f142" },
-  "zen-mode.nvim": { "branch": "main", "commit": "68f554702de63f4b7b6b6d4bcb10178f41a0acc7" }
+  "ultimate-autopair.nvim": { "branch": "v0.6", "commit": "cca248f35bb23c38596e7a33ba6cc607ef69f142" }
 }

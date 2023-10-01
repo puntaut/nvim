@@ -76,11 +76,6 @@ local plugins = {
         build = "make",
     },
 
-    -- ZenMode
-    {
-        "folke/zen-mode.nvim",
-    },
-
     -- Statusline, Bufferline and Scrallbar
     {
         -- Statusline
@@ -104,8 +99,7 @@ local plugins = {
         }
     },
     {
-        "petertriho/nvim-scrollbar",
-        "kevinhwang91/nvim-hlslens",
+        "dstein64/nvim-scrollview",
     },
 
     -- Language Server Protocal

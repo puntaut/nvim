@@ -9,10 +9,6 @@ local WIDTH_RATIO = 0.4  -- You can change this too
 local function on_attach(bufnr)
     local api = require('nvim-tree.api')
 
-    local function opts(desc)
-        return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
-    end
-
     api.config.mappings.default_on_attach(bufnr)
 
     vim.keymap.del('n', 'o', { buffer = bufnr })
@@ -43,6 +39,8 @@ require("nvim-tree").setup {
         }
     },
     view = {
+        centralize_selection = true,
+        cursorline = false,
         relativenumber = false,
         float = {
             enable = true,
@@ -62,6 +60,8 @@ require("nvim-tree").setup {
                     col = center_x,
                     width = window_w_int,
                     height = window_h_int,
+                    title = "Nvim-Tree",
+                    title_pos = "center",
                 }
             end,
         },
