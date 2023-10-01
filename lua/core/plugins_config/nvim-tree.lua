@@ -22,7 +22,7 @@ local function on_attach(bufnr)
     vim.keymap.del('n', 'd', { buffer = bufnr })
     vim.keymap.del('n', 'a', { buffer = bufnr })
     vim.keymap.set('n', 'k', api.fs.remove, { buffer = bufnr })
-    vim.keymap.set('n', 'z', api.fs.create, { buffer = bufnr })
+    vim.keymap.set('n', 'n', api.fs.create, { buffer = bufnr })
     vim.keymap.set('n', 'l', api.node.navigate.parent_close, { buffer = bufnr })
     vim.keymap.set('n', 'h', api.tree.change_root_to_node, { buffer = bufnr })
     vim.keymap.set('n', '<esc>', api.tree.close, { buffer = bufnr })
@@ -71,4 +71,4 @@ require("nvim-tree").setup {
     },
 }
 
-vim.keymap.set('n', '<leader>t', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<space>t', '<cmd>NvimTreeFindFileToggle<CR>')

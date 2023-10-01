@@ -5,11 +5,10 @@ require 'nvim-treesitter.configs'.setup {
             enable = true,
             lookahead = true,
             keymaps = {
-                ["zf"] = "@function.outer",
+                ["lf"] = "@function.outer",
                 ["hf"] = "@function.inner",
-                ["zc"] = "@class.outer",
-                ["hc"] = { query = "@class.inner", desc = "Select inner part of a class region" },
-                ["zs"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
+                ["hl"] = "@parameter.inner",
+                ["ll"] = "@parameter.outer",
             },
             selection_modes = {
                 ['@parameter.outer'] = 'v', -- charwise
@@ -27,8 +26,12 @@ require 'nvim-treesitter.configs'.setup {
         enable = true,
     },
     indent = {
-        enable = true,
+        enable = false,
         use_languagetree = true,
+    },
+    context_commentstring = {
+        enable = true,
+        enable_autocmd = false,
     },
     rainbow = {
         enable = true,

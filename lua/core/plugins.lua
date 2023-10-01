@@ -32,11 +32,12 @@ local plugins = {
         -- TextObjects
         "nvim-treesitter/nvim-treesitter-textobjects",
         "chrisgrieser/nvim-various-textobjs",
-        "gaving/vim-textobj-argument",
+        "JoosepAlviste/nvim-ts-context-commentstring",
     },
 
     -- Editing and Motion
     {
+        "smoka7/hop.nvim",
         "numToStr/Comment.nvim",
         "yamatsum/nvim-cursorline",
         "kylechui/nvim-surround",
@@ -47,7 +48,6 @@ local plugins = {
     -- Indentation and Formatting
     {
         "lukas-reineke/indent-blankline.nvim",
-        "cappyzawa/trim.nvim",
     },
 
     -- Color and Icon
@@ -67,7 +67,10 @@ local plugins = {
         -- Fuzzy Finder
         "nvim-telescope/telescope.nvim",
         tag = "0.1.1",
-        dependencies = { "nvim-lua/plenary.nvim" },
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "debugloop/telescope-undo.nvim",
+        },
     },
     {
         "nvim-telescope/telescope-fzf-native.nvim",
@@ -90,8 +93,21 @@ local plugins = {
         "akinsho/bufferline.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
-    "petertriho/nvim-scrollbar",
-    "kevinhwang91/nvim-hlslens",
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- add any options here
+        },
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        }
+    },
+    {
+        "petertriho/nvim-scrollbar",
+        "kevinhwang91/nvim-hlslens",
+    },
 
     -- Language Server Protocal
     {

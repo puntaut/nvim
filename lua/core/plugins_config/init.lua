@@ -14,9 +14,9 @@ require("core.plugins_config.surround")
 require("core.plugins_config.dial")
 require("core.plugins_config.nvim-cursorline")
 require("core.plugins_config.ultimate-autopair")
+require("core.plugins_config.hop")
 
--- Indentation and Formatting
-require("core.plugins_config.trim")
+-- Indentation
 require("core.plugins_config.indent_blankline")
 
 -- Color and Icon
@@ -30,6 +30,7 @@ require("core.plugins_config.telescope")
 -- Statusline and Bufferline
 require("core.plugins_config.lualine")
 require("core.plugins_config.bufferline")
+require("core.plugins_config.noice")
 require("core.plugins_config.nvim-scrollbar")
 
 -- ZenMode

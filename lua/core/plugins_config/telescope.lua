@@ -44,14 +44,30 @@ telescope.setup {
     },
     extensions = {
         fzf = {
-            fuzzy = false,            -- false will only do exact matching
+            fuzzy = false,                  -- false will only do exact matching
             override_generic_sorter = true, -- override the generic sorter
-            override_file_sorter = true, -- override the file sorter
-            case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+            override_file_sorter = true,    -- override the file sorter
+            case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
+        },
+        undo = {
+            use_delta = true,
+            use_custom_command = nil, -- setting this implies `use_delta = false`. Accepted format is: { "bash", "-c", "echo '$DIFF' | delta" }
+            side_by_side = false,
+            diff_context_lines = vim.o.scrolloff,
+            entry_format = "state #$ID, $STAT, $TIME",
+            time_format = "",
+            mappings = {
+                i = {
+                    ["<cr>"] = require("telescope-undo.actions").yank_additions,
+                    ["<S-cr>"] = require("telescope-undo.actions").yank_deletions,
+                    ["<C-cr>"] = require("telescope-undo.actions").restore,
+                },
+            },
         },
     }
 }
 telescope.load_extension('fzf')
+telescope.load_extension("undo")
 
 vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, {})
 vim.keymap.set('n', '<leader>s', builtin.resume, {})
@@ -64,3 +80,4 @@ vim.keymap.set('n', '<leader>ft', builtin.jumplist, {})
 vim.keymap.set('n', '<leader>fk', builtin.keymaps, {})
 vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
 vim.keymap.set('n', '<leader><CR>', builtin.lsp_definitions, {})
+vim.keymap.set("n", "<leader>u", telescope.extensions.undo.undo, {})

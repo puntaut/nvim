@@ -9,14 +9,9 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require("lspconfig")
 
 -- efmls-configs-nvim
--- local eslint = require("efmls-configs.linters.eslint")
--- local prettier = require("efmls-configs.formatters.prettier")
--- local stylua = require("efmls-configs.formatters.stylua")
 local flake8 = require('efmls-configs.linters.flake8')
 local yapf = require('efmls-configs.formatters.yapf')
 local languages = {
-    -- typescript = { eslint, prettier },
-    -- lua = { stylua },
     python = {
         flake8,
         yapf
@@ -65,16 +60,6 @@ lspconfig.efm.setup(vim.tbl_extend("force", efmls_config, {
 lspconfig.pyright.setup({ capabilities = capabilities })
 lspconfig.clangd.setup({ capabilities = capabilities })
 lspconfig.jsonls.setup({ capabilities = capabilities })
-
--- -- Null_ls
--- local null_ls = require("null-ls")
--- null_ls.setup({
---   sources = {
---     null_ls.builtins.formatting.stylua,
---     null_ls.builtins.diagnostics.eslint,
---     null_ls.builtins.completion.spell,
---   },
--- })
 
 -- CMP
 local cmp = require("cmp")

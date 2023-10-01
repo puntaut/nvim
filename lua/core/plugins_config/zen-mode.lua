@@ -1,1 +1,1 @@
-vim.keymap.set('n', '<leader>z', ':ZenMode<CR>')
+vim.keymap.set('n', '<leader>z', '<cmd>ZenMode<CR>')

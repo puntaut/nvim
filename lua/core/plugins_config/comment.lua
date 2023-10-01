@@ -13,12 +13,12 @@ require("Comment").setup({
     extra = {
         above = "ocM",
         below = "ocm",
-        eol = "ocZ",
+        eol = "ocL",
     },
     mappings = {
         basic = true,
         extra = true,
     },
-    pre_hook = nil,
+    pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
     post_hook = nil,
 })
