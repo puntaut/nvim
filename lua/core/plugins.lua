@@ -52,7 +52,7 @@ local plugins = {
 
     -- Color and Icon
     {
-        "HiPhish/nvim-ts-rainbow2",
+        "HiPhish/rainbow-delimiters.nvim",
         "norcalli/nvim-colorizer.lua",
         "nvim-tree/nvim-web-devicons",
     },
@@ -66,7 +66,6 @@ local plugins = {
     {
         -- Fuzzy Finder
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.1",
         dependencies = {
             "nvim-lua/plenary.nvim",
             "debugloop/telescope-undo.nvim",

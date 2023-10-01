@@ -20,6 +20,7 @@ require("core.plugins_config.hop")
 require("core.plugins_config.indent_blankline")
 
 -- Color and Icon
+require("core.plugins_config.rainbow-delimiters")
 require("core.plugins_config.nvim-colorizer")
 require("core.plugins_config.nvim-web-devicons")
 
@@ -31,6 +32,7 @@ require("core.plugins_config.telescope")
 require("core.plugins_config.lualine")
 require("core.plugins_config.bufferline")
 require("core.plugins_config.noice")
+require("core.plugins_config.notify")
 require("core.plugins_config.nvim-scrollbar")
 
 -- ZenMode
