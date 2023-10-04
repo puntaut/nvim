@@ -57,5 +57,6 @@ end
 
 return {
     "monaqa/dial.nvim",
+    event = "BufReadPre",
     config = config,
 }

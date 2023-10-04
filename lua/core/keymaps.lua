@@ -23,7 +23,7 @@ map('', '<C-k>', '<C-u>zz', {})
 map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
-map('n', '<CR>', '"0ciw', {})
+map('n', '<CR>', '"_ciw', {})
 map('n', '<S-CR>', '"+ciw', {})
 
 -- Code block Navigation

@@ -23,6 +23,7 @@ end
 
 return {
     "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    event = "BufReadPre",
     config = config,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
 }

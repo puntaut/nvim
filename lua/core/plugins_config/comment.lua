@@ -28,6 +28,7 @@ end
 return {
     'numToStr/Comment.nvim',
     config = config,
+    event = "BufReadPre",
     dependencies = {
         "JoosepAlviste/nvim-ts-context-commentstring",
     },

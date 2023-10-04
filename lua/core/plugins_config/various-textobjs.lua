@@ -66,6 +66,7 @@ end
 
 return {
     "chrisgrieser/nvim-various-textobjs",
+    event = "BufReadPre",
     lazy = false,
     config = config,
 }

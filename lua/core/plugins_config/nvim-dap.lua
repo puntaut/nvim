@@ -77,5 +77,6 @@ end
 
 return {
     "mfussenegger/nvim-dap",
+    event = "BufReadPre",
     config = config,
 }
