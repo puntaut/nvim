@@ -1,4 +1,5 @@
-require('nvim-cursorline').setup {
+local config = function()
+require("nvim-cursorline").setup {
     cursorline = {
         enable = false,
         timeout = 10,
@@ -9,4 +10,10 @@ require('nvim-cursorline').setup {
         min_length = 3,
         hl = { underline = true },
     }
+}
+end
+
+return {
+    "yamatsum/nvim-cursorline",
+    config = config,
 }

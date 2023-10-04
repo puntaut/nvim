@@ -1,25 +1,10 @@
--- Current Theme
-vim.o.termguicolors = true
+local config = function()
+    vim.cmd.colorscheme "rose-pine"
+end
 
--- Custom Catppuccin
-require("catppuccin").setup {
-    flavour = "mocha",
-    color_overrides = {
-        all = {
-            text = "#ffffff",
-        },
-        latte = {},
-        frappe = {},
-        macchiato = {},
-        mocha = {
-            base = "#111111",
-            mantle = "#131313",
-            crust = "#151515",
-        },
-    }
+return {
+    "rose-pine/neovim",
+    config = config,
+    lazy = false,
+    priority = 1000,
 }
-
--- Custom Rose-pine
-require('rose-pine').setup({
-})
-vim.cmd.colorscheme "rose-pine"

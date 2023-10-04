@@ -1,3 +1,4 @@
+local config = function()
 require("nvim-surround").setup {
     keymaps = {
         insert = "<C-o>s",
@@ -27,4 +28,12 @@ require("nvim-surround").setup {
             vim.cmd(string.format("silent normal! %dG=%dG", start, stop))
         end
     end,
+}
+end
+
+return {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = config,
 }

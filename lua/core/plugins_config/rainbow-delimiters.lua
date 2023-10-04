@@ -1,3 +1,4 @@
+local config = function()
 local rainbow_delimiters = require 'rainbow-delimiters'
 
 vim.g.rainbow_delimiters = {
@@ -18,4 +19,10 @@ vim.g.rainbow_delimiters = {
         'RainbowDelimiterOrange',
         'RainbowDelimiterRed',
     },
+}
+end
+
+return {
+    "HiPhish/rainbow-delimiters.nvim",
+    config = config,
 }

@@ -1,3 +1,6 @@
+-- Mapleader
+vim.g.mapleader = ' '
+
 -- Environment Variable Assignment
 if vim.fn.has('unix') == 1 then
     vim.env.SHELL = '/opt/homebrew/bin/fish'
