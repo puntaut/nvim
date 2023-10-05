@@ -1,4 +1,7 @@
 vim.opt.clipboard:append("unnamedplus")
+vim.opt.synmaxcol = 240
+vim.opt.history = 100
+vim.opt.shortmess:append "sI"
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
@@ -38,3 +41,4 @@ vim.opt.fillchars = { eob = " " }
 -- Left Column width
 vim.o.numberwidth = 4
 vim.o.signcolumn = "yes:1"
+vim.diagnostic.config({ severity_sort = true })

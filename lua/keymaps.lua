@@ -99,9 +99,9 @@ map('', 'E', '2kzz', {})
 map('', 'A', '2jzz', {})
 
 -- Save and Close Buffer
-map('', 'Q', ':bd<CR>', {})
-map('', 'FQ', ':q!<CR>', {})
-map('', 'W', ':w<CR>', {})
+map('', 'Q', '<Cmd>bd<CR>', {})
+map('', 'FQ', '<Cmd>q!<CR>', {})
+map('', 'W', '<Cmd>w<CR>', {})
 
 -- Tab Identation
 map('n', '<Tab>', 'i<Tab>', {})

@@ -34,7 +34,6 @@ local config = function()
             }
         },
         view = {
-            centralize_selection = true,
             cursorline = false,
             relativenumber = false,
             float = {
@@ -49,14 +48,14 @@ local config = function()
                     local center_x = (screen_w - window_w) / 2
                     local center_y = ((vim.opt.lines:get() - window_h) / 2) - vim.opt.cmdheight:get()
                     return {
-                        border = "rounded",
+                        -- border = "rounded",
                         relative = "editor",
                         row = center_y,
                         col = center_x,
                         width = window_w_int,
                         height = window_h_int,
-                        title = "Nvim-Tree",
-                        title_pos = "center",
+                        -- title = "Nvim-Tree",
+                        -- title_pos = "center",
                     }
                 end,
             },
