@@ -9,10 +9,10 @@ local config = function()
     }
 
     local signs = {
-        Error = "",
-        Warn = "",
-        Info = "",
-        Hint = "",
+        Error = "⨉",
+        Warn = "△",
+        Info = "i",
+        Hint = "?",
     }
 
     for type, icon in pairs(signs) do
