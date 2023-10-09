@@ -1,5 +1,7 @@
 local config = function()
     require('rose-pine').setup({
+        variant = 'main',
+        -- variant = 'dawn',
     })
     vim.cmd.colorscheme "rose-pine"
 end
