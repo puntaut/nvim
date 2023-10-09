@@ -41,8 +41,8 @@ local config = function()
     keymap({ "o", "x" }, "lH", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
 
     -- Subword
-    keymap({ "o", "x" }, "hS", '<cmd>lua require("various-textobjs").subword(true)<CR>')
-    keymap({ "o", "x" }, "hS", '<cmd>lua require("various-textobjs").subword(false)<CR>')
+    keymap({ "o", "x" }, "hS", "<cmd>lua require('various-textobjs').subword(true)<CR>")
+    keymap({ "o", "x" }, "lS", "<cmd>lua require('various-textobjs').subword(false)<CR>")
 
     -- Line
     keymap({ "o", "x" }, "hs", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")

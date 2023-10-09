@@ -24,7 +24,7 @@ map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})
-map('n', '<S-CR>', '"+ciw', {})
+map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
 
 -- Code block Navigation
 map('n', '{', '{zz', {})

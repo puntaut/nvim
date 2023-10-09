@@ -1,6 +1,6 @@
 local config = function()
     require('nvim-treesitter.configs').setup {
-        ensure_installed = { "c", "lua", "rust", "ruby", "vim", "python", "json", "json5", "sql" },
+        ensure_installed = { "c", "lua", "rust", "ruby", "vim", "python", "json", "json5", "sql", "regex", "bash", "markdown", "markdown_inline" },
         textobjects = {
             select = {
                 enable = true,

@@ -6,7 +6,8 @@ local config = function()
             delete       = { text = '⎽' },
             topdelete    = { text = '⎺' },
             changedelete = { text = '~' },
-            untracked    = { text = '┋' },
+            untracked    = { text = ' ' },
+            -- untracked    = { text = '┋' },
         },
         signcolumn                   = true,  -- Toggle with `:Gitsigns toggle_signs`
         numhl                        = false, -- Toggle with `:Gitsigns toggle_numhl`
