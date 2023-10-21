@@ -1,7 +1,7 @@
 local config = function()
     local lspconfig = require('lspconfig')
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
-    lspconfig.pyright.setup { capabilities = capabilities }
+    lspconfig.pyright.setup({ capabilities = capabilities })
     lspconfig.clangd.setup({ capabilities = capabilities })
     lspconfig.jsonls.setup({ capabilities = capabilities })
     lspconfig.lua_ls.setup {
@@ -36,10 +36,15 @@ local config = function()
             -- Buffer local mappings.
             -- See `:help vim.lsp.*` for documentation on any of the below functions
             local opts = { buffer = ev.buf }
-            vim.keymap.set("n", "<space>lD", vim.lsp.buf.declaration, opts)
-            vim.keymap.set("n", "<space>ld", vim.lsp.buf.definition, opts)
+            vim.keymap.set("n", "O", vim.lsp.buf.hover, opts)
+            vim.keymap.set("n", "od", vim.lsp.buf.definition, opts)
+            vim.keymap.set("n", "oD", vim.lsp.buf.declaration, opts)
+            vim.keymap.set("n", "ot", vim.lsp.buf.type_definition, opts)
+            vim.keymap.set("n", "oi", vim.lsp.buf.implementation, opts)
+            vim.keymap.set("n", "<space>n", vim.diagnostic.goto_next, opts)
+            vim.keymap.set("n", "<space>N", vim.diagnostic.goto_prev, opts)
             vim.keymap.set("n", "<space>li", vim.lsp.buf.implementation, opts)
-            vim.keymap.set('n', "<space>ls", vim.lsp.buf.signature_help, opts)
+            vim.keymap.set("n", "<space>ls", vim.lsp.buf.signature_help, opts)
             vim.keymap.set("n", "<space>wa", vim.lsp.buf.add_workspace_folder, opts)
             vim.keymap.set("n", "<space>wr", vim.lsp.buf.remove_workspace_folder, opts)
             vim.keymap.set("n", "<space>wl", function()

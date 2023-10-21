@@ -14,17 +14,13 @@ local config = function()
             },
             augend.constant.new {
                 elements = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
-                    "s",
-                    "t",
-                    "u", "v", "w", "x", "y", "z" },
+                    "s", "t", "u", "v", "w", "x", "y", "z" },
                 word = false,
                 cyclic = true,
             },
             augend.constant.new {
                 elements = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
-                    "S",
-                    "T",
-                    "U", "V", "W", "X", "Y", "Z" },
+                    "S", "T", "U", "V", "W", "X", "Y", "Z" },
                 word = false,
                 cyclic = true,
             },
@@ -47,12 +43,16 @@ local config = function()
     }
 
     -- change augends in VISUAL mode
-    vim.keymap.set("v", "<C-a>", require("dial.map").inc_visual(), { noremap = true })
-    vim.keymap.set("v", "<C-x>", require("dial.map").dec_visual(), { noremap = true })
+    -- vim.keymap.set("v", "<C-a>", require("dial.map").inc_visual(), { noremap = true })
+    -- vim.keymap.set("v", "<C-x>", require("dial.map").dec_visual(), { noremap = true })
+    vim.keymap.set("v", "<C-c>", require("dial.map").dec_visual(), { noremap = true })
+    vim.keymap.set("v", "<C-v>", require("dial.map").inc_visual(), { noremap = true })
 
     -- change augends in NORMAL mode
-    vim.keymap.set("n", "<C-a>", require("dial.map").inc_normal(), { noremap = true })
-    vim.keymap.set("n", "<C-x>", require("dial.map").dec_normal(), { noremap = true })
+    -- vim.keymap.set("n", "<C-a>", require("dial.map").inc_normal(), { noremap = true })
+    -- vim.keymap.set("n", "<C-x>", require("dial.map").dec_normal(), { noremap = true })
+    vim.keymap.set("n", "<C-c>", require("dial.map").dec_normal(), { noremap = true })
+    vim.keymap.set("n", "<C-v>", require("dial.map").inc_normal(), { noremap = true })
 end
 
 return {
