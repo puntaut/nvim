@@ -22,15 +22,19 @@ map('', '<leader>i', '<C-w>l', {})
 map('', '<C-k>', '<C-u>zz', {})
 map('', '<C-l>', '<C-d>zz', {})
 
--- -- Change In Word Using Enter
--- map('n', '<CR>', '"_ciw', {})
--- map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
+-- Change In Word Using Enter
+map('n', '<CR>', '"_ciw', {})
+map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
 
 -- Code block Navigation
 map('n', '{', '{zz', {})
 map('n', '}', '}zz', {})
 map('n', '(', '(zz', {})
 map('n', ')', ')zz', {})
+
+-- Next and Previous Navigation
+map('n', 'n', 'nzz', {})
+map('n', 'N', 'Nzz', {})
 
 -- Word Navigation
 map('', 'I', 'w', {})
@@ -46,16 +50,16 @@ map('n', '>', 'v>', {})
 map('n', 'U', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'k', 'd', {})
-map('n', 'kk', 'dd', {})
+map('', 'k', '"0d', {})
+map('n', 'kk', '"0dd', {})
 map('', 'K', '"_d', {})
 map('n', 'KK', '"_dd', {})
 
 -- Change but not Yank to System Clipboard
 map('', 'c', '"_c', {})
 map('n', 'cc', '"_cc', {})
-map('', 'C', 'c', {})
-map('n', 'CC', 'cc', {})
+map('', 'C', '"0c', {})
+map('n', 'CC', '"0cc', {})
 
 -- Map for macro
 map('n', 'X', '@x', {})
@@ -77,16 +81,16 @@ map('', 'x', '"_x', {})
 -- map('n', 'yy', '"0yy', {})
 
 -- New version
-map('x', 'Y', 'may`a', {})
+map('x', 'Y', 'ma"+y`a', {})
 map('n', 'Y', '"+y', {})
 map('n', 'YY', '"+yy', {})
-map('x', 'y', 'may`a', {})
--- map('n', 'y', 'y', {})
--- map('n', 'yy', 'yy', {})
+map('x', 'y', 'ma"0y`a', {})
+map('n', 'y', '"0y', {})
+map('n', 'yy', '"0yy', {})
 
 -- Paste from System Clipboard
-map('', 'p', 'p', {})
-map('', 'P', 'P', {})
+map('', 'p', '"0p', {})
+map('', 'P', '"0P', {})
 -- map('', '<C-p>', '"+p', {})
 
 -- Insert Mode and Insert Line
@@ -110,9 +114,11 @@ map('', 'M', 'O', {})
 map('n', '~', '~h', {})
 map('n', '~~', 'V~', {})
 
--- Scroll Up and Scroll Down
-map('', 'E', '2kzz', {})
-map('', 'A', '2jzz', {})
+-- -- Scroll Up and Scroll Down
+-- map('', 'E', '2kzz', {})
+-- map('', 'A', '2jzz', {})
+map('', 'E', '6k', {})
+map('', 'A', '6j', {})
 
 -- Save and Close Buffer
 map('', 'Q', '<Cmd>bd<CR>', {})
