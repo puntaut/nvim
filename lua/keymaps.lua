@@ -32,9 +32,9 @@ map('n', '}', '}zz', {})
 map('n', '(', '(zz', {})
 map('n', ')', ')zz', {})
 
--- Next and Previous Navigation
-map('n', 'n', 'nzz', {})
-map('n', 'N', 'Nzz', {})
+-- -- Next and Previous Navigation
+-- map('n', 'n', 'nzz', {})
+-- map('n', 'N', 'Nzz', {})
 
 -- Word Navigation
 map('', 'I', 'w', {})
@@ -50,10 +50,10 @@ map('n', '>', 'v>', {})
 map('n', 'U', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'k', '"0d', {})
-map('n', 'kk', '"0dd', {})
-map('', 'K', '"_d', {})
-map('n', 'KK', '"_dd', {})
+map('', 'g', '"0d', {})
+map('n', 'gg', '"0dd', {})
+map('', 'G', '"_d', {})
+map('n', 'GG', '"_dd', {})
 
 -- Change but not Yank to System Clipboard
 map('', 'c', '"_c', {})
