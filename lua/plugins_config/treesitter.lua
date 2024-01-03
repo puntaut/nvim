@@ -39,10 +39,6 @@ local config = function()
             enable = false,
             use_languagetree = true,
         },
-        context_commentstring = {
-            enable = true,
-            enable_autocmd = false,
-        },
     }
 end
 

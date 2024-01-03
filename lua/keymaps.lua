@@ -50,10 +50,10 @@ map('n', '>', 'v>', {})
 map('n', 'U', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'g', '"0d', {})
-map('n', 'gg', '"0dd', {})
-map('', 'G', '"_d', {})
-map('n', 'GG', '"_dd', {})
+map('', 'k', '"0d', {})
+map('n', 'kk', '"0dd', {})
+map('', 'K', '"_d', {})
+map('n', 'KK', '"_dd', {})
 
 -- Change but not Yank to System Clipboard
 map('', 'c', '"_c', {})
