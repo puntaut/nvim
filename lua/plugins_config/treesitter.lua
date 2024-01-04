@@ -50,6 +50,5 @@ return {
     dependencies = {
         "nvim-treesitter/nvim-treesitter-textobjects",
         "chrisgrieser/nvim-various-textobjs",
-        "JoosepAlviste/nvim-ts-context-commentstring",
     }
 }
