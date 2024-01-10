@@ -6,21 +6,23 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+vim.g.loaded_matchit = 1 -- Don't Delete this!!! This line achieve to not delay up and down move in Visual mode
+
 -- Arrow Navigation
 map('', 'd', 'h', {})
 map('', 'e', 'k', {})
 map('', 'a', 'j', {})
 map('', 'i', 'l', {})
 
--- Window Navigation
-map('', '<leader>d', '<C-w>h', {})
-map('', '<leader>e', '<C-w>k', {})
-map('', '<leader>a', '<C-w>j', {})
-map('', '<leader>i', '<C-w>l', {})
+-- -- Window Navigation
+-- map('', '<leader>d', '<C-w>h', {})
+-- map('', '<leader>e', '<C-w>k', {})
+-- map('', '<leader>a', '<C-w>j', {})
+-- map('', '<leader>i', '<C-w>l', {})
 
--- Page Navigation
-map('', '<C-k>', '<C-u>zz', {})
-map('', '<C-l>', '<C-d>zz', {})
+-- -- Page Navigation
+-- map('', '<C-k>', '<C-u>zz', {})
+-- map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})
@@ -40,11 +42,11 @@ map('n', ')', ')zz', {})
 map('', 'I', 'w', {})
 map('', 'D', 'b', {})
 
--- Indentation and Dedentation
-map('v', '<', '<gv', {})
-map('v', '>', '>gv', {})
-map('n', '<', 'v<', {})
-map('n', '>', 'v>', {})
+-- -- Indentation and Dedentation
+-- map('v', '<', '<gv', {})
+-- map('v', '>', '>gv', {})
+-- map('n', '<', 'v<', {})
+-- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
 map('n', 'U', '<C-r>', {})
@@ -126,8 +128,8 @@ map('', 'W', '<Cmd>w<CR>', {})
 -- map('', '<D-w>', '<Cmd>bd<CR>', {})
 -- map('', '<D-s>', '<Cmd>w<CR>', {})
 
--- Tab Identation
-map('n', '<Tab>', 'i<Tab>', {})
+-- -- Tab Identation
+-- map('n', '<Tab>', 'i<Tab>', {})
 
 -- Insert Mode Delete
 -- map('i', '<M-BS>', '<C-g>u<Cmd>normal! bdw<CR>', {})
