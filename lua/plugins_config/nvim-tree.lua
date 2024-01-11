@@ -34,6 +34,7 @@ local config = function()
             }
         },
         view = {
+            -- side = "right",
             cursorline = false,
             relativenumber = false,
             float = {

@@ -14,15 +14,15 @@ map('', 'e', 'k', {})
 map('', 'a', 'j', {})
 map('', 'i', 'l', {})
 
--- -- Window Navigation
--- map('', '<leader>d', '<C-w>h', {})
--- map('', '<leader>e', '<C-w>k', {})
--- map('', '<leader>a', '<C-w>j', {})
--- map('', '<leader>i', '<C-w>l', {})
+-- Window Navigation
+map('', '<leader>d', '<C-w>h', {})
+map('', '<leader>e', '<C-w>k', {})
+map('', '<leader>a', '<C-w>j', {})
+map('', '<leader>i', '<C-w>l', {})
 
--- -- Page Navigation
--- map('', '<C-k>', '<C-u>zz', {})
--- map('', '<C-l>', '<C-d>zz', {})
+-- Page Navigation
+map('', '<C-k>', '<C-u>zz', {})
+map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})

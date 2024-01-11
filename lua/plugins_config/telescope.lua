@@ -16,12 +16,12 @@ local config = function()
                 "--column",
                 "--smart-case",
             },
-            path_display = {
-                shorten = 4,
-                shorten_exclude = { 'start' },
-                truncate = 4,
-                use_ellipsis = true
-            },
+            -- path_display = {
+            --     shorten = 4,
+            --     shorten_exclude = { 'start' },
+            --     truncate = 4,
+            --     use_ellipsis = true
+            -- },
             selection_caret = "  ",
             entry_prefix = "  ",
             sorting_strategy = "ascending",
@@ -61,19 +61,21 @@ local config = function()
         }
     }
     telescope.load_extension("undo")
+    telescope.load_extension("file_browser")
 
     vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, {})
     vim.keymap.set('n', '<leader>rs', builtin.resume, {})
     vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
     vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
     vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-    vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
     vim.keymap.set('n', '<leader>fp', builtin.oldfiles, {})
     vim.keymap.set('n', '<leader>fj', builtin.jumplist, {})
     vim.keymap.set('n', '<leader>fk', builtin.keymaps, {})
     vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
+    vim.keymap.set('n', '<leader>s', builtin.pickers, {})
     vim.keymap.set('n', '<leader><CR>', builtin.lsp_definitions, {})
-    vim.keymap.set("n", "<leader>u", telescope.extensions.undo.undo, {})
+    vim.keymap.set('n', '<leader>ft', telescope.extensions.file_browser.file_browser, {})
+    vim.keymap.set('n', '<leader>u', telescope.extensions.undo.undo, {})
     vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {})
 end
 
@@ -84,5 +86,6 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
         "debugloop/telescope-undo.nvim",
+        "nvim-telescope/telescope-file-browser.nvim",
     },
 }
