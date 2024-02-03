@@ -23,6 +23,9 @@ local config = function()
         sort_by = "case_sensitive",
         renderer = {
             group_empty = true,
+            icons = {
+                padding = " ",
+            },
         },
         on_attach = on_attach, -- Don't Delete!!
         disable_netrw = true,
@@ -37,6 +40,7 @@ local config = function()
             -- side = "right",
             cursorline = false,
             relativenumber = false,
+            signcolumn = "no",
             float = {
                 enable = true,
                 open_win_config = function()
@@ -55,7 +59,7 @@ local config = function()
                         col = center_x,
                         width = window_w_int,
                         height = window_h_int,
-                        -- title = "Nvim-Tree",
+                        -- title = " Nvim-Tree ",
                         -- title_pos = "center",
                     }
                 end,

@@ -74,7 +74,6 @@ local config = function()
     vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
     vim.keymap.set('n', '<leader>s', builtin.pickers, {})
     vim.keymap.set('n', '<leader><CR>', builtin.lsp_definitions, {})
-    vim.keymap.set('n', '<leader>ft', telescope.extensions.file_browser.file_browser, {})
     vim.keymap.set('n', '<leader>u', telescope.extensions.undo.undo, {})
     vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {})
 end
