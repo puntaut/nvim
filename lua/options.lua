@@ -3,15 +3,15 @@
 --     -- local alpha = function()
 --     --     return string.format("%x", math.floor(255 * vim.g.transparency or 0.8))
 --     -- end
---     vim.keymap.set('v', '<D-c>', '"+y')         -- Copy
---     vim.keymap.set('n', '<D-v>', 'a<C-R><C-P>+<esc>')         -- Paste normal mode
---     vim.keymap.set('v', '<D-v>', '"+P')         -- Paste visual mode
---     vim.keymap.set('c', '<D-v>', '<C-R>+')      -- Paste command mode
---     vim.keymap.set('i', '<D-v>', '<C-R><C-P>+')  -- Paste insert mode
---     vim.keymap.set('i', '<D-bs>', '<C-U>')  -- Delete line insert mode
---     vim.keymap.set('c', '<D-bs>', '<C-U>')  -- Delete line insert mode
---     vim.keymap.set('n', '<D-a>', 'v<cmd>lua require("various-textobjs").entireBuffer()<CR>')  -- Paste insert mode
---     vim.keymap.set('v', '<D-a>', '<cmd>lua require("various-textobjs").entireBuffer()<CR>')  -- Paste insert mode
+    vim.keymap.set('v', '<D-c>', '"+y')         -- Copy
+    vim.keymap.set('n', '<D-v>', 'a<C-R><C-P>+<esc>')         -- Paste normal mode
+    vim.keymap.set('v', '<D-v>', '"+P')         -- Paste visual mode
+    vim.keymap.set('c', '<D-v>', '<C-R>+')      -- Paste command mode
+    vim.keymap.set('i', '<D-v>', '<C-R><C-P>+')  -- Paste insert mode
+    vim.keymap.set('i', '<D-bs>', '<C-U>')  -- Delete line insert mode
+    vim.keymap.set('c', '<D-bs>', '<C-U>')  -- Delete line insert mode
+    vim.keymap.set('n', '<D-a>', 'v<cmd>lua require("various-textobjs").entireBuffer()<CR>')  -- Paste insert mode
+    vim.keymap.set('v', '<D-a>', '<cmd>lua require("various-textobjs").entireBuffer()<CR>')  -- Paste insert mode
 --     -- g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
 --     -- vim.g.neovide_transparency = 0.0
 --     -- vim.g.transparency = 1.0
@@ -58,6 +58,8 @@ vim.o.writebackup = false
 
 -- Searching
 vim.o.incsearch = true
+vim.o.smartcase = true
+vim.o.ignorecase = true
 
 -- UI options
 vim.o.relativenumber = true

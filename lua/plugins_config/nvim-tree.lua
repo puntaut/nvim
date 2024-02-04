@@ -1,5 +1,5 @@
 local HEIGHT_RATIO = 0.7 -- You can change this
-local WIDTH_RATIO = 0.4  -- You can change this too
+local WIDTH_RATIO = 0.45  -- You can change this too
 local config = function()
     local function on_attach(bufnr)
         local api = require('nvim-tree.api')
@@ -25,7 +25,21 @@ local config = function()
             group_empty = true,
             icons = {
                 padding = " ",
+                git_placement = 'after',
+                modified_placement = 'after',
+                glyphs = {
+                    folder = {
+                        arrow_closed = " ",
+                        arrow_open = " ",
+                    },
+                },
             },
+            -- icons = icons,
+            -- indent_markers = {
+            --     enable = true,
+            --     inline_arrows = true,
+            --     icons = { corner = '╰' },
+            -- },
         },
         on_attach = on_attach, -- Don't Delete!!
         disable_netrw = true,
@@ -64,9 +78,9 @@ local config = function()
                     }
                 end,
             },
-            width = function()
-                return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
-            end,
+            -- width = function()
+            --     return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
+            -- end,
         },
     }
 
