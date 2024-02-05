@@ -6,8 +6,6 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-vim.g.loaded_matchit = 1 -- Don't Delete this!!! This line achieve to not delay up and down move in Visual mode
-
 -- Arrow Navigation
 map('', 'd', 'h', {})
 map('', 'e', 'k', {})

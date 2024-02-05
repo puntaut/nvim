@@ -1,7 +1,9 @@
 local config = function()
     require("notify").setup {
-        render = "compact",
-        stages = "fade",
+        -- render = "compact",
+        render = "minimal",
+        -- stages = "fade",
+        stages = "static",
         fps = 60,
         timeout = 2000,
     }

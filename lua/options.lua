@@ -33,6 +33,7 @@ vim.opt.swapfile = false
 
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.paste = false
+vim.g.loaded_matchit = 1 -- Don't Delete this!!! This line achieve to not delay up and down move in Visual mode
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1

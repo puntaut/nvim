@@ -1,4 +1,4 @@
-local config = function()
+local cmp_config = function()
     local cmp = require("cmp")
     local luasnip = require("luasnip")
     local lspkind = require("lspkind")
@@ -70,15 +70,27 @@ local config = function()
     })
 end
 
+local luasnip_config = function()
+    require("luasnip.loaders.from_vscode").lazy_load()
+end
+
 return {
-    "hrsh7th/nvim-cmp",
-    event = { 'InsertEnter', 'CmdlineEnter' },
-    config = config,
-    dependencies = {
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-cmdline",
-        "onsails/lspkind.nvim",
-    }
+    {
+        "hrsh7th/nvim-cmp",
+        event = { 'InsertEnter', 'CmdlineEnter' },
+        config = cmp_config,
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-cmdline",
+            "onsails/lspkind.nvim",
+        }
+    },
+    {
+        "L3MON4D3/LuaSnip",
+        event = "InsertEnter",
+        config = luasnip_config,
+        dependencies = { "rafamadriz/friendly-snippets" },
+    },
 }

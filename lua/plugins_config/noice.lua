@@ -1,16 +1,5 @@
 local config = function()
     require("noice").setup({
-        -- cmdline = {
-        --     format = {
-        --         cmdline = { title = '', icon = ' ' },
-        --         lua = { title = '', icon = '󰢱 ' },
-        --         help = { title = '', icon = '󰋖 ' },
-        --         input = { title = '', icon = ' ' },
-        --         filter = { title = '', icon = ' ' },
-        --         search_up = { icon = '    ' },
-        --         search_down = { icon = '    ' },
-        --     },
-        -- },
         lsp = {
             -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
             override = {
