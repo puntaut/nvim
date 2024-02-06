@@ -14,7 +14,7 @@ local config = function()
         extra = {
             above = "ocM",
             below = "ocm",
-            eol = "ocL",
+            eol = "ocH",
         },
         mappings = {
             basic = true,
