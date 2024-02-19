@@ -26,7 +26,7 @@
 -- end
 
 -- CPU and Memory optimization
-vim.opt.synmaxcol = 240
+-- vim.opt.synmaxcol = 240
 vim.opt.history = 100
 vim.opt.shortmess:append "sI"
 vim.opt.swapfile = false
@@ -73,3 +73,6 @@ vim.opt.fillchars = { eob = " " }
 vim.o.numberwidth = 4
 vim.o.signcolumn = "yes:1"
 vim.diagnostic.config({ severity_sort = true })
+
+-- Blinking & Gui of Cursor
+vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
