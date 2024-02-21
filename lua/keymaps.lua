@@ -24,6 +24,9 @@ map('', '<C-k>', '<C-w>k', {})
 map('', '<C-l>', '<C-w>j', {})
 map('', '<C-;>', '<C-w>l', {})
 map('', '<C-w>', '<cmd>close<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
+map('', '<C-t>', '<cmd>enew<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
+map('', '<C-e>', '<cmd>bo split<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
+map('', '<C-r>', '<cmd>bo vert split<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
 
 -- Window Moving
 map('', '<m-c-s-j>', '<C-w>H', {})
@@ -142,7 +145,7 @@ map('', 'A', '6j', {})
 
 -- Save and Close Buffer
 map('', 'Q', '<Cmd>bd<CR>', {})
-map('', '<D-s>', '<Cmd>w<CR>', {})
+map('', '<D-s>', '<Cmd>update<CR>', {})
 -- map('', '<D-w>', '<Cmd>bd<CR>', {})
 -- map('', '<D-s>', '<Cmd>w<CR>', {})
 
