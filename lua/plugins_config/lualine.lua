@@ -24,8 +24,17 @@ local config = function()
             lualine_a = { 'mode' },
             lualine_b = { 'branch', 'diff', 'diagnostics' },
             lualine_c = { { 'filename', path = 3 } },
-            lualine_x = { { require("noice").api.status.mode.get, cond = require("noice").api.status.mode.has }, 'encoding', 'fileformat', 'filetype' },
-            lualine_y = { 'progress' },
+            lualine_x = {
+                {
+                    require("noice").api.status.message.get_hl,
+                    cond = require("noice").api.status.message.has,
+                },
+                {
+                    require("noice").api.status.mode.get,
+                    cond = require("noice").api.status.mode.has
+                },
+                --[[ 'encoding', 'fileformat',]] 'filetype' },
+            lualine_y = { --[[ 'filetype', ]] 'progress'},
             lualine_z = { 'location' }
         },
         inactive_sections = {
