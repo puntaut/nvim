@@ -47,7 +47,8 @@ map('', 'D', 'b', {})
 -- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('n', 'U', '<C-r>', {})
+map('n', 'Z', '<C-r>', {})
+map('n', 'z', 'u', {})
 
 -- Delete and Yank to System Clipboard
 map('', 'k', '"0d', {})
