@@ -205,7 +205,7 @@ local config = function()
         },
     }
 
-    vim.keymap.set('n', '<space>t', '<cmd>NvimTreeFindFileToggle<CR>')
+    vim.keymap.set('n', '<space>n', '<cmd>NvimTreeFindFileToggle<CR>')
 end
 
 return {

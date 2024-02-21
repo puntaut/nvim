@@ -12,15 +12,34 @@ map('', 'e', 'k', {})
 map('', 'a', 'j', {})
 map('', 'i', 'l', {})
 
--- Window Navigation
-map('', '<leader>d', '<C-w>h', {})
-map('', '<leader>e', '<C-w>k', {})
-map('', '<leader>a', '<C-w>j', {})
-map('', '<leader>i', '<C-w>l', {})
+-- -- Window Navigation
+-- map('', '<leader>d', '<C-w>h', {})
+-- map('', '<leader>e', '<C-w>k', {})
+-- map('', '<leader>a', '<C-w>j', {})
+-- map('', '<leader>i', '<C-w>l', {})
 
--- Page Navigation
-map('', '<C-k>', '<C-u>zz', {})
-map('', '<C-l>', '<C-d>zz', {})
+-- Window Navigation
+map('', '<C-j>', '<C-w>h', {})
+map('', '<C-k>', '<C-w>k', {})
+map('', '<C-l>', '<C-w>j', {})
+map('', '<C-;>', '<C-w>l', {})
+map('', '<C-w>', '<cmd>close<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
+
+-- Window Moving
+map('', '<m-c-s-j>', '<C-w>H', {})
+map('', '<m-c-s-k>', '<C-w>K', {})
+map('', '<m-c-s-l>', '<C-w>J', {})
+map('', '<m-c-s-y>', '<C-w>L', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
+
+-- Window Resizing
+map('', '<m-c-j>', '2<C-w><', {})
+map('', '<m-c-k>', '2<C-w>-', {})
+map('', '<m-c-l>', '2<C-w>+', {})
+map('', '<m-c-y>', '2<C-w>>', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
+
+-- -- Page Navigation
+-- map('', '<C-k>', '<C-u>zz', {})
+-- map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})
@@ -123,7 +142,7 @@ map('', 'A', '6j', {})
 
 -- Save and Close Buffer
 map('', 'Q', '<Cmd>bd<CR>', {})
-map('', 'W', '<Cmd>w<CR>', {})
+map('', '<D-s>', '<Cmd>w<CR>', {})
 -- map('', '<D-w>', '<Cmd>bd<CR>', {})
 -- map('', '<D-s>', '<Cmd>w<CR>', {})
 
