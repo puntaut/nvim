@@ -23,10 +23,10 @@ map('', '<C-j>', '<C-w>h', {})
 map('', '<C-k>', '<C-w>k', {})
 map('', '<C-l>', '<C-w>j', {})
 map('', '<C-;>', '<C-w>l', {})
-map('', '<C-w>', '<cmd>close<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
-map('', '<C-t>', '<cmd>enew<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
-map('', '<C-e>', '<cmd>bo split<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
-map('', '<C-r>', '<cmd>bo vert split<cr>', {}) -- Note that in kitty terminal config <C-w> is mapping to lazygit<cr>
+map('', '<C-w>', '<cmd>close<cr>', {})
+map('', '<C-t>', '<cmd>enew<cr>', {})
+map('', '<C-e>', '<cmd>bo split<cr>', {})
+map('', '<C-r>', '<cmd>bo vert split<cr>', {})
 
 -- Window Moving
 map('', '<m-c-s-j>', '<C-w>H', {})
@@ -35,10 +35,10 @@ map('', '<m-c-s-l>', '<C-w>J', {})
 map('', '<m-c-s-y>', '<C-w>L', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
 
 -- Window Resizing
-map('', '<m-c-j>', '2<C-w><', {})
+map('', '<m-c-j>', '6<C-w><', {})
 map('', '<m-c-k>', '2<C-w>-', {})
 map('', '<m-c-l>', '2<C-w>+', {})
-map('', '<m-c-y>', '2<C-w>>', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
+map('', '<m-c-y>', '6<C-w>>', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
 
 -- -- Page Navigation
 -- map('', '<C-k>', '<C-u>zz', {})
@@ -69,8 +69,8 @@ map('', 'D', 'b', {})
 -- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('n', 'Z', '<C-r>', {})
-map('n', 'z', 'u', {})
+map('n', 'U', '<C-r>', {})
+map('n', 'u', 'u', {})
 
 -- Delete and Yank to System Clipboard
 map('', 'k', '"0d', {})

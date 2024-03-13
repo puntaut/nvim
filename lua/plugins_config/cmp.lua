@@ -3,6 +3,9 @@ local cmp_config = function()
     local luasnip = require("luasnip")
     local lspkind = require("lspkind")
     cmp.setup({
+        experimental = {
+            ghost_text = true
+        },
         formatting = {
             format = lspkind.cmp_format({
                 mode = 'symbol',       -- show only symbol annotations
