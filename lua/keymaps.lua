@@ -7,9 +7,9 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Arrow Navigation
-map('', 'd', 'h', {})
-map('', 'e', 'k', {})
-map('', 'a', 'j', {})
+map('', 'h', 'h', {})
+map('', 'a', 'k', {})
+map('', 'e', 'j', {})
 map('', 'i', 'l', {})
 
 -- -- Window Navigation
@@ -60,7 +60,7 @@ map('n', ')', ')zz', {})
 
 -- Word Navigation
 map('', 'I', 'w', {})
-map('', 'D', 'b', {})
+map('', 'H', 'b', {})
 
 -- -- Indentation and Dedentation
 -- map('v', '<', '<gv', {})
@@ -69,14 +69,14 @@ map('', 'D', 'b', {})
 -- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('n', 'U', '<C-r>', {})
-map('n', 'u', 'u', {})
+map('n', 'O', '<C-r>', {})
+map('n', 'o', 'u', {})
 
 -- Delete and Yank to System Clipboard
-map('', 'k', '"0d', {})
-map('n', 'kk', '"0dd', {})
-map('', 'K', '"_d', {})
-map('n', 'KK', '"_dd', {})
+map('', 'd', '"0d', {})
+map('n', 'dd', '"0dd', {})
+map('', 'D', '"_d', {})
+map('n', 'DD', '"_dd', {})
 
 -- Change but not Yank to System Clipboard
 map('', 'c', '"_c', {})
@@ -117,14 +117,14 @@ map('', 'P', '"0P', {})
 -- map('', '<C-p>', '"+p', {})
 
 -- Insert Mode and Insert Line
-map('', 'l', 'i', {})
-map('', 'L', 'I', {})
-map('', 'h', 'a', {})
-map('', 'H', 'A', {})
-map('', 'b', 'o<esc>', {})
-map('', 'B', 'O<esc>', {})
-map('', 'm', 'o', {})
-map('', 'M', 'O', {})
+map('', 'k', 'i', {})
+map('', 'K', 'I', {})
+map('', 'u', 'a', {})
+map('', 'U', 'A', {})
+map('', 'm', 'o<esc>', {})
+map('', 'M', 'O<esc>', {})
+map('', 'w', 'o', {})
+map('', 'W', 'O', {})
 
 -- Show Me Documents
 -- map('', 'J', 'K', {})
@@ -133,15 +133,15 @@ map('', 'M', 'O', {})
 -- map('', 'h', 'n', {})
 -- map('', 'H', 'N', {})
 
--- Toggle Uppercase-Lowercase Canceling Moving Cursor
-map('n', '~', '~h', {})
-map('n', '~~', 'V~', {})
+-- -- Toggle Uppercase-Lowercase Canceling Moving Cursor
+-- map('n', '~', '~h', {})
+-- map('n', '~~', 'V~', {})
 
 -- -- Scroll Up and Scroll Down
 -- map('', 'E', '2kzz', {})
 -- map('', 'A', '2jzz', {})
-map('', 'E', '6k', {})
-map('', 'A', '6j', {})
+map('', 'A', '6k', {})
+map('', 'E', '6j', {})
 
 -- Save and Close Buffer
 map('', 'Q', '<Cmd>bd<CR>', {})

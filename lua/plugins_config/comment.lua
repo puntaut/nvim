@@ -4,17 +4,17 @@ local config = function()
         sticky = true,
         ignore = nil,
         toggler = {
-            line = "occ",
-            block = "obb",
+            line = "ycc",
+            block = "ybb",
         },
         opleader = {
-            line = "oc",
-            block = "ob",
+            line = "yc",
+            block = "yb",
         },
         extra = {
-            above = "ocM",
-            below = "ocm",
-            eol = "ocH",
+            above = "ycW",
+            below = "ycw",
+            eol = "ycU",
         },
         mappings = {
             basic = true,

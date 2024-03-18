@@ -35,18 +35,18 @@ local config = function()
     local keymap = vim.keymap.set
 
     -- Indentation
-    keymap({ "o", "x" }, "ll", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
-    keymap({ "o", "x" }, "lL", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
-    keymap({ "o", "x" }, "hl", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
-    keymap({ "o", "x" }, "hL", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
+    keymap({ "o", "x" }, "kk", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
+    keymap({ "o", "x" }, "kK", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
+    keymap({ "o", "x" }, "uk", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
+    keymap({ "o", "x" }, "uK", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
 
     -- Subword
-    keymap({ "o", "x" }, "lS", "<cmd>lua require('various-textobjs').subword(true)<CR>")
-    keymap({ "o", "x" }, "hS", "<cmd>lua require('various-textobjs').subword(false)<CR>")
+    keymap({ "o", "x" }, "kS", "<cmd>lua require('various-textobjs').subword(true)<CR>")
+    keymap({ "o", "x" }, "uS", "<cmd>lua require('various-textobjs').subword(false)<CR>")
 
     -- Line
-    keymap({ "o", "x" }, "ls", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")
-    keymap({ "o", "x" }, "hs", "<cmd>lua require('various-textobjs').lineCharacterwise(false)<CR>")
+    keymap({ "o", "x" }, "kl", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")
+    keymap({ "o", "x" }, "ul", "<cmd>lua require('various-textobjs').lineCharacterwise(false)<CR>")
 
     -- Next Closing Bracket
     -- keymap({ "o", "x" }, "%", "<cmd>lua require('various-textobjs').toNextClosingBracket()<CR>")
@@ -55,7 +55,7 @@ local config = function()
     keymap({ "o", "x" }, "rp", "<cmd>lua require('various-textobjs').restOfParagraph()<CR>")
 
     -- Rest of Indentation
-    keymap({ "o", "x" }, "rl", "<cmd>lua require('various-textobjs').restOfIndentation()<CR>")
+    keymap({ "o", "x" }, "rk", "<cmd>lua require('various-textobjs').restOfIndentation()<CR>")
 
     -- Entire Buffer
     keymap({ "o", "x" }, "gG", "<cmd>lua require('various-textobjs').entireBuffer()<CR>")
