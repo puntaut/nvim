@@ -28,21 +28,21 @@ map('', '<C-t>', '<cmd>enew<cr>', {})
 map('', '<C-e>', '<cmd>bo split<cr>', {})
 map('', '<C-r>', '<cmd>bo vert split<cr>', {})
 
--- Window Moving
-map('', '<m-c-s-j>', '<C-w>H', {})
-map('', '<m-c-s-k>', '<C-w>K', {})
-map('', '<m-c-s-l>', '<C-w>J', {})
-map('', '<m-c-s-y>', '<C-w>L', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
+-- -- Window Moving
+-- map('', '<m-c-s-j>', '<C-w>H', {})
+-- map('', '<m-c-s-k>', '<C-w>K', {})
+-- map('', '<m-c-s-l>', '<C-w>J', {})
+-- map('', '<m-c-s-y>', '<C-w>L', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
+--
+-- -- Window Resizing
+-- map('', '<m-c-j>', '6<C-w><', {})
+-- map('', '<m-c-k>', '2<C-w>-', {})
+-- map('', '<m-c-l>', '2<C-w>+', {})
+-- map('', '<m-c-y>', '6<C-w>>', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
 
--- Window Resizing
-map('', '<m-c-j>', '6<C-w><', {})
-map('', '<m-c-k>', '2<C-w>-', {})
-map('', '<m-c-l>', '2<C-w>+', {})
-map('', '<m-c-y>', '6<C-w>>', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
-
--- -- Page Navigation
--- map('', '<C-k>', '<C-u>zz', {})
--- map('', '<C-l>', '<C-d>zz', {})
+-- Page Navigation
+map('', '<C-k>', '<C-u>zz', {})
+map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})
@@ -69,8 +69,8 @@ map('', 'H', 'b', {})
 -- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('n', 'O', '<C-r>', {})
-map('n', 'o', 'u', {})
+map('n', 'k', 'u', {})
+map('n', 'K', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
 map('', 'd', '"0d', {})
@@ -84,10 +84,10 @@ map('n', 'cc', '"_cc', {})
 map('', 'C', '"0c', {})
 map('n', 'CC', '"0cc', {})
 
--- Map for macro
-map('n', 'X', '@x', {})
-map('n', 'S', '@s', {})
-map('n', '@', '@@', {})
+-- -- Map for macro
+-- map('n', 'X', '@x', {})
+-- map('n', 'S', '@s', {})
+-- map('n', '@', '@@', {})
 -- map('n', 'Q', '@q', {})
 
 -- Change but not Yank to System Clipboard
@@ -117,8 +117,8 @@ map('', 'P', '"0P', {})
 -- map('', '<C-p>', '"+p', {})
 
 -- Insert Mode and Insert Line
-map('', 'k', 'i', {})
-map('', 'K', 'I', {})
+map('', 'o', 'i', {})
+map('', 'O', 'I', {})
 map('', 'u', 'a', {})
 map('', 'U', 'A', {})
 map('', 'm', 'o<esc>', {})

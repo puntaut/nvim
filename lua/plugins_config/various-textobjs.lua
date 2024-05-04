@@ -35,17 +35,17 @@ local config = function()
     local keymap = vim.keymap.set
 
     -- Indentation
-    keymap({ "o", "x" }, "kk", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
-    keymap({ "o", "x" }, "kK", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
-    keymap({ "o", "x" }, "uk", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
-    keymap({ "o", "x" }, "uK", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
+    keymap({ "o", "x" }, "oo", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
+    keymap({ "o", "x" }, "oO", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
+    keymap({ "o", "x" }, "uo", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
+    keymap({ "o", "x" }, "uO", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
 
     -- Subword
-    keymap({ "o", "x" }, "kS", "<cmd>lua require('various-textobjs').subword(true)<CR>")
+    keymap({ "o", "x" }, "oS", "<cmd>lua require('various-textobjs').subword(true)<CR>")
     keymap({ "o", "x" }, "uS", "<cmd>lua require('various-textobjs').subword(false)<CR>")
 
     -- Line
-    keymap({ "o", "x" }, "kl", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")
+    keymap({ "o", "x" }, "ol", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")
     keymap({ "o", "x" }, "ul", "<cmd>lua require('various-textobjs').lineCharacterwise(false)<CR>")
 
     -- Next Closing Bracket
