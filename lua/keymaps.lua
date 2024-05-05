@@ -59,8 +59,8 @@ map('n', ')', ')zz', {})
 -- map('n', 'N', 'Nzz', {})
 
 -- Word Navigation
-map('', 'I', 'w', {})
-map('', 'H', 'b', {})
+map('', 'I', 'W', {})
+map('', 'H', 'B', {})
 
 -- -- Indentation and Dedentation
 -- map('v', '<', '<gv', {})
