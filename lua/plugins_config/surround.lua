@@ -1,14 +1,14 @@
 local config = function()
 require("nvim-surround").setup {
     keymaps = {
-        normal = "ys",
-        normal_cur = "yss",
-        visual = "ys",
+        normal = "ks",
+        normal_cur = "kss",
+        visual = "ks",
         delete = "ds",
         change = "cs",
-        normal_line = "yS",
-        normal_cur_line = "yS",
-        visual_line = "yS",
+        normal_line = "kS",
+        normal_cur_line = "kS",
+        visual_line = "kS",
         change_line = "cS",
     },
     disabledKeymaps = {

@@ -69,8 +69,8 @@ map('', 'H', 'B', {})
 -- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('n', 'k', 'u', {})
-map('n', 'K', '<C-r>', {})
+map('n', 'x', 'u', {})
+map('n', 'X', '<C-r>', {})
 
 -- Delete and Yank to System Clipboard
 map('', 'd', '"0d', {})
@@ -87,12 +87,12 @@ map('n', 'CC', '"0cc', {})
 -- -- Map for macro
 -- map('n', 'X', '@x', {})
 -- map('n', 'S', '@s', {})
--- map('n', '@', '@@', {})
--- map('n', 'Q', '@q', {})
+map('n', '@', '@@', {})
+map('n', 'Q', '@q', {})
 
--- Change but not Yank to System Clipboard
-map('', 's', '"_s', {})
-map('', 'x', '"_x', {})
+-- -- Change but not Yank to System Clipboard
+-- map('', 's', '"_s', {})
+map('', 's', '"_x', {})
 
 -- Yank to System Clipboard
 -- Old version
