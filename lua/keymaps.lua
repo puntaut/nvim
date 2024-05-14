@@ -155,4 +155,8 @@ map('', '<D-s>', '<Cmd>update<CR>', {})
 -- Insert Mode Delete
 -- map('i', '<M-BS>', '<C-g>u<Cmd>normal! bdw<CR>', {})
 map('i', '<M-BS>', '<C-w>', {})
+map('i', '<M-Left>', '<C-o>b', {})
+map('i', '<M-Right>', '<C-o>w', {})
+map('i', '<D-Left>', '<C-o>^', {})
+map('i', '<D-Right>', '<C-o>$', {})
 -- map('c', '<M-BS>', '<C-w>', {}) -- this doesn't work
