@@ -92,7 +92,7 @@ map('n', 'Q', '@q', {})
 
 -- -- Change but not Yank to System Clipboard
 -- map('', 's', '"_s', {})
-map('', 's', '"_x', {})
+map('', 'S', '"_x', {})
 
 -- Yank to System Clipboard
 -- Old version
@@ -157,6 +157,8 @@ map('', '<D-s>', '<Cmd>update<CR>', {})
 map('i', '<M-BS>', '<C-w>', {})
 map('i', '<M-Left>', '<C-o>b', {})
 map('i', '<M-Right>', '<C-o>w', {})
-map('i', '<D-Left>', '<C-o>^', {})
+map('i', '<D-Left>', '<C-o>0', {})
 map('i', '<D-Right>', '<C-o>$', {})
+map('i', '<D-Up>', '<C-o>gg<C-o>0', {})
+map('i', '<D-Down>', '<C-o>G<C-o>$', {})
 -- map('c', '<M-BS>', '<C-w>', {}) -- this doesn't work
