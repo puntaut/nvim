@@ -60,8 +60,8 @@ local config = function()
     -- Entire Buffer
     keymap({ "o", "x" }, "gG", "<cmd>lua require('various-textobjs').entireBuffer()<CR>")
 
-    -- Near EoL
-    keymap({ "o", "x" }, "E", "<cmd>lua require('various-textobjs').nearEoL()<CR>")
+    -- -- Near EoL
+    -- keymap({ "o", "x" }, "E", "<cmd>lua require('various-textobjs').nearEoL()<CR>")
 end
 
 return {

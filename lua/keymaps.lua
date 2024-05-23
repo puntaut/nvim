@@ -54,9 +54,9 @@ map('n', '}', '}zz', {})
 map('n', '(', '(zz', {})
 map('n', ')', ')zz', {})
 
--- -- Next and Previous Navigation
--- map('n', 'n', 'nzz', {})
--- map('n', 'N', 'Nzz', {})
+-- Next and Previous Navigation
+map('n', 'n', 'nzz', {})
+map('n', 'N', 'Nzz', {})
 
 -- Word Navigation
 map('', 'I', 'W', {})
@@ -144,7 +144,7 @@ map('', 'A', '6k', {})
 map('', 'E', '6j', {})
 
 -- Save and Close Buffer
-map('', 'Q', '<Cmd>bd<CR>', {})
+map('', 'L', '<Cmd>bd<CR>', {})
 map('', '<D-s>', '<Cmd>update<CR>', {})
 -- map('', '<D-w>', '<Cmd>bd<CR>', {})
 -- map('', '<D-s>', '<Cmd>w<CR>', {})
