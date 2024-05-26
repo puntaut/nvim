@@ -91,8 +91,8 @@ map('n', '@', '@@', {})
 map('n', 'Q', '@q', {})
 
 -- -- Change but not Yank to System Clipboard
--- map('', 's', '"_s', {})
-map('', 'S', '"_x', {})
+map('', 'S', '"_s', {})
+map('', 's', '"_x', {})
 
 -- Yank to System Clipboard
 -- Old version
