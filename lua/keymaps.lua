@@ -28,6 +28,9 @@ map('', '<C-t>', '<cmd>enew<cr>', {})
 map('', '<C-e>', '<cmd>bo split<cr>', {})
 map('', '<C-r>', '<cmd>bo vert split<cr>', {})
 
+-- Canceling Search Mode
+map('', '\\', '<cmd>nohlsearch<cr>', {})
+
 -- -- Window Moving
 -- map('', '<m-c-s-j>', '<C-w>H', {})
 -- map('', '<m-c-s-k>', '<C-w>K', {})
