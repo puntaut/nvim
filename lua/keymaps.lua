@@ -43,9 +43,9 @@ map('', '\\', '<cmd>nohlsearch<cr>', {})
 -- map('', '<m-c-l>', '2<C-w>+', {})
 -- map('', '<m-c-y>', '6<C-w>>', {}) -- There is no Semicolon mapping in Terminal So we need kitty config to help
 
--- Page Navigation
-map('', '<C-k>', '<C-u>zz', {})
-map('', '<C-l>', '<C-d>zz', {})
+-- -- Page Navigation
+-- map('', '<C-k>', '<C-u>zz', {})
+-- map('', '<C-l>', '<C-d>zz', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})

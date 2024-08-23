@@ -12,6 +12,8 @@
     vim.keymap.set('c', '<D-bs>', '<C-U>')  -- Delete line insert mode
     vim.keymap.set('n', '<D-a>', 'v<cmd>lua require("various-textobjs").entireBuffer()<CR>')  -- Paste insert mode
     vim.keymap.set('v', '<D-a>', '<cmd>lua require("various-textobjs").entireBuffer()<CR>')  -- Paste insert mode
+    vim.keymap.set('', '<D-z>', 'u')
+    vim.keymap.set('', '<D-Z>', '<C-r>')
 --     -- g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
 --     -- vim.g.neovide_transparency = 0.0
 --     -- vim.g.transparency = 1.0
@@ -75,4 +77,4 @@ vim.o.signcolumn = "yes:1"
 vim.diagnostic.config({ severity_sort = true })
 
 -- Blinking & Gui of Cursor
-vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
+vim.o.guicursor = "n-v-c-sm:block,i-c-ci-ve:ver20,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon300-Cursor/lCursor"
