@@ -77,4 +77,4 @@ vim.o.signcolumn = "yes:1"
 vim.diagnostic.config({ severity_sort = true })
 
 -- Blinking & Gui of Cursor
-vim.o.guicursor = "n-v-c-sm:block,i-c-ci-ve:ver20,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon300-Cursor/lCursor"
+vim.o.guicursor = "n-v-c-sm:block,i-c-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon300-Cursor/lCursor"
