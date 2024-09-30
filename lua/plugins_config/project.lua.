@@ -1,0 +1,8 @@
+local config = function()
+    require("project_nvim").setup {}
+end
+
+return {
+    "ahmedkhalf/project.nvim",
+    config = config
+}

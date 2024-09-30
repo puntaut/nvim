@@ -55,7 +55,7 @@ local config = function()
     keymap({ "o", "x" }, "rp", "<cmd>lua require('various-textobjs').restOfParagraph()<CR>")
 
     -- Rest of Indentation
-    keymap({ "o", "x" }, "rk", "<cmd>lua require('various-textobjs').restOfIndentation()<CR>")
+    keymap({ "o", "x" }, "ro", "<cmd>lua require('various-textobjs').restOfIndentation()<CR>")
 
     -- Entire Buffer
     keymap({ "o", "x" }, "gG", "<cmd>lua require('various-textobjs').entireBuffer()<CR>")
