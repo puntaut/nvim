@@ -4,17 +4,17 @@ local config = function()
         sticky = true,
         ignore = nil,
         toggler = {
-            line = "kcc",
-            block = "kbb",
+            line = "gcc",
+            block = "gbb",
         },
         opleader = {
-            line = "kc",
-            block = "kb",
+            line = "gc",
+            block = "gb",
         },
         extra = {
-            above = "kcW",
-            below = "kcw",
-            eol = "kcU",
+            above = "gcO",
+            below = "gco",
+            eol = "gcA",
         },
         mappings = {
             basic = true,
@@ -28,7 +28,7 @@ end
 return {
     "numToStr/Comment.nvim",
     config = config,
-    event = "BufReadPre",
+    -- event = "BufReadPre",
     dependencies = {
         "JoosepAlviste/nvim-ts-context-commentstring",
     },

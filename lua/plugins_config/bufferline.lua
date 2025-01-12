@@ -19,16 +19,16 @@ local config = function()
     vim.keymap.set('n', '<leader>9', '<cmd>BufferLineGoToBuffer 9<CR>')
 
     -- Pick to Next or Previous Tab
-    vim.keymap.set('n', '&', '<cmd>BufferLineCyclePrev<CR>')
-    vim.keymap.set('n', '|', '<cmd>BufferLineCycleNext<CR>')
+    vim.keymap.set('n', '{', '<cmd>BufferLineCyclePrev<CR>')
+    vim.keymap.set('n', '}', '<cmd>BufferLineCycleNext<CR>')
 
     -- Move to Next or Previous Tab
     vim.keymap.set('n', '<C-[>', '<cmd>BufferLineMovePrev<CR>')
     vim.keymap.set('n', '<C-]>', '<cmd>BufferLineMoveNext<CR>')
 
     -- Pick and Close Tab
-    vim.keymap.set('n', '<leader>pp', '<cmd>BufferLineCloseOthers<CR>')
-    vim.keymap.set('n', '<leader>pg', '<cmd>BufferLineCloseRight<CR>')
+    vim.keymap.set('n', '<leader>nn', '<cmd>BufferLineCloseOthers<CR>')
+    -- vim.keymap.set('n', '<leader>pg', '<cmd>BufferLineCloseRight<CR>')
 end
 
 return {

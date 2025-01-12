@@ -7,10 +7,10 @@ local config = function()
                 enable = true,
                 lookahead = true,
                 keymaps = {
-                    ["of"] = "@function.inner",
-                    ["uf"] = "@function.outer",
-                    ["ou"] = "@parameter.inner",
-                    ["uu"] = "@parameter.outer",
+                    ["if"] = "@function.inner",
+                    ["af"] = "@function.outer",
+                    ["ia"] = "@parameter.inner",
+                    ["aa"] = "@parameter.outer",
                 },
                 selection_modes = {
                     ['@parameter.outer'] = 'v', -- charwise

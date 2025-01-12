@@ -7,18 +7,18 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Arrow Navigation
-map('', 'h', 'h', {})
-map('', 'a', 'k', {})
-map('', 'e', 'j', {})
-map('', 'i', 'l', {})
-
+map('', 'j', 'h', {})
+map('', 'k', 'k', {})
+map('', 'l', 'j', {})
+map('', ';', 'l', {})
+--
+-- -- -- Window Navigation
+-- -- map('', '<leader>d', '<C-w>h', {})
+-- -- map('', '<leader>e', '<C-w>k', {})
+-- -- map('', '<leader>a', '<C-w>j', {})
+-- -- map('', '<leader>i', '<C-w>l', {})
+--
 -- -- Window Navigation
--- map('', '<leader>d', '<C-w>h', {})
--- map('', '<leader>e', '<C-w>k', {})
--- map('', '<leader>a', '<C-w>j', {})
--- map('', '<leader>i', '<C-w>l', {})
-
--- Window Navigation
 map('', '<C-j>', '<C-w>h', {})
 map('', '<C-k>', '<C-w>k', {})
 map('', '<C-l>', '<C-w>j', {})
@@ -61,9 +61,9 @@ map('n', ')', ')zz', {})
 map('n', 'n', 'nzz', {})
 map('n', 'N', 'Nzz', {})
 
--- Word Navigation
-map('', 'I', 'W', {})
-map('', 'H', 'B', {})
+-- -- Word Navigation
+-- map('', ':', 'W', {})
+-- map('', 'J', 'B', {})
 
 -- -- Indentation and Dedentation
 -- map('v', '<', '<gv', {})
@@ -72,30 +72,30 @@ map('', 'H', 'B', {})
 -- map('n', '>', 'v>', {})
 
 -- Redo in Normal Mode
-map('n', 'x', 'u', {})
-map('n', 'X', '<C-r>', {})
+map('n', 'z', 'u', {})
+map('n', 'Z', '<C-r>', {})
 
--- Delete and Yank to System Clipboard
-map('', 'd', '"0d', {})
-map('n', 'dd', '"0dd', {})
-map('', 'D', '"_d', {})
-map('n', 'DD', '"_dd', {})
-
--- Change but not Yank to System Clipboard
-map('', 'c', '"_c', {})
-map('n', 'cc', '"_cc', {})
-map('', 'C', '"0c', {})
-map('n', 'CC', '"0cc', {})
-
--- -- Map for macro
--- map('n', 'X', '@x', {})
--- map('n', 'S', '@s', {})
-map('n', '@', '@@', {})
-map('n', 'Q', '@q', {})
+-- -- Delete and Yank to System Clipboard
+-- map('', 'd', '"0d', {})
+-- map('n', 'dd', '"0dd', {})
+-- map('', 'D', '"_d', {})
+-- map('n', 'DD', '"_dd', {})
 
 -- -- Change but not Yank to System Clipboard
-map('', 'S', '"_s', {})
-map('', 's', '"_x', {})
+-- map('', 'c', '"_c', {})
+-- map('n', 'cc', '"_cc', {})
+-- map('', 'C', '"0c', {})
+-- map('n', 'CC', '"0cc', {})
+
+-- -- -- Map for macro
+-- -- map('n', 'X', '@x', {})
+-- -- map('n', 'S', '@s', {})
+-- map('n', '@', '@@', {})
+-- map('n', 'Q', '@q', {})
+
+-- -- -- Change but not Yank to System Clipboard
+-- map('', 'S', '"_s', {})
+-- map('', 's', '"_x', {})
 
 -- Yank to System Clipboard
 -- Old version
@@ -106,28 +106,34 @@ map('', 's', '"_x', {})
 -- map('n', 'y', '"0y', {})
 -- map('n', 'yy', '"0yy', {})
 
--- New version
+-- -- New version
+-- map('x', 'Y', 'ma"+y`a', {})
+-- map('n', 'Y', '"+y', {})
+-- map('n', 'YY', '"+yy', {})
+-- map('x', 'y', 'ma"0y`a', {})
+-- map('n', 'y', '"0y', {})
+-- map('n', 'yy', '"0yy', {})
+
+-- Lastest version
 map('x', 'Y', 'ma"+y`a', {})
 map('n', 'Y', '"+y', {})
 map('n', 'YY', '"+yy', {})
-map('x', 'y', 'ma"0y`a', {})
-map('n', 'y', '"0y', {})
-map('n', 'yy', '"0yy', {})
+map('x', 'y', 'may`a', {})
 
--- Paste from System Clipboard
-map('', 'p', '"0p', {})
-map('', 'P', '"0P', {})
--- map('', '<C-p>', '"+p', {})
+-- -- Paste from System Clipboard
+-- map('', 'p', '"0p', {})
+-- map('', 'P', '"0P', {})
+-- -- map('', '<C-p>', '"+p', {})
 
--- Insert Mode and Insert Line
-map('', 'o', 'i', {})
-map('', 'O', 'I', {})
-map('', 'u', 'a', {})
-map('', 'U', 'A', {})
-map('', 'm', 'o<esc>', {})
-map('', 'M', 'O<esc>', {})
-map('', 'w', 'o', {})
-map('', 'W', 'O', {})
+-- -- Insert Mode and Insert Line
+-- map('', 'o', 'i', {})
+-- map('', 'O', 'I', {})
+-- map('', 'u', 'a', {})
+-- map('', 'U', 'A', {})
+-- map('', 'm', 'o<esc>', {})
+-- map('', 'M', 'O<esc>', {})
+-- map('', 'w', 'o', {})
+-- map('', 'W', 'O', {})
 
 -- Show Me Documents
 -- map('', 'J', 'K', {})
@@ -143,11 +149,11 @@ map('', 'W', 'O', {})
 -- -- Scroll Up and Scroll Down
 -- map('', 'E', '2kzz', {})
 -- map('', 'A', '2jzz', {})
-map('', 'A', '6k', {})
-map('', 'E', '6j', {})
+map('', 'K', '6k', {})
+map('', 'L', '6j', {})
 
 -- Save and Close Buffer
-map('', 'L', '<Cmd>bd<CR>', {})
+map('', 'W', '<Cmd>bd<CR>', {})
 map('', '<D-s>', '<Cmd>update<CR>', {})
 -- map('', '<D-w>', '<Cmd>bd<CR>', {})
 -- map('', '<D-s>', '<Cmd>w<CR>', {})
