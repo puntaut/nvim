@@ -3,6 +3,9 @@ local config = function()
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
     lspconfig.pyright.setup({ capabilities = capabilities })
     lspconfig.jsonls.setup({ capabilities = capabilities })
+    -- lspconfig.superhtml.setup({
+    --     capabilities = capabilities
+    -- })
     lspconfig.jdtls.setup({
         handlers = {
             ['language/status'] = function(_, result)
@@ -16,7 +19,8 @@ local config = function()
     })
     lspconfig.clangd.setup({
         filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-        capabilities = capabilities })
+        capabilities = capabilities
+    })
     lspconfig.lua_ls.setup {
         settings = {
             Lua = {
