@@ -13,14 +13,7 @@ local config = function()
                 cyclic = true,
             },
             augend.constant.new {
-                elements = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
-                    "s", "t", "u", "v", "w", "x", "y", "z" },
-                word = false,
-                cyclic = true,
-            },
-            augend.constant.new {
-                elements = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
-                    "S", "T", "U", "V", "W", "X", "Y", "Z" },
+                elements = {"i", "j", "k"},
                 word = false,
                 cyclic = true,
             },
@@ -34,6 +27,11 @@ local config = function()
             },
             augend.constant.new {
                 elements = { "and", "or" },
+                word = true,
+                cyclic = true,
+            },
+            augend.constant.new {
+                elements = { "True", "False" },
                 word = true,
                 cyclic = true,
             },
