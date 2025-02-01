@@ -1,6 +1,8 @@
 local config = function()
     local lspconfig = require('lspconfig')
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    local capabilities = require('blink.cmp').get_lsp_capabilities()
+    -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
     lspconfig.pyright.setup({ capabilities = capabilities })
     lspconfig.jsonls.setup({ capabilities = capabilities })
     -- lspconfig.superhtml.setup({
@@ -80,5 +82,8 @@ end
 
 return {
     "neovim/nvim-lspconfig",
+    dependencies = {
+        "Saghen/blink.cmp"
+    },
     config = config,
 }

@@ -18,15 +18,15 @@ map('', ';', 'l', {})
 -- -- map('', '<leader>a', '<C-w>j', {})
 -- -- map('', '<leader>i', '<C-w>l', {})
 --
--- -- Window Navigation
-map('', '<C-j>', '<C-w>h', {})
-map('', '<C-k>', '<C-w>k', {})
-map('', '<C-l>', '<C-w>j', {})
-map('', '<C-;>', '<C-w>l', {})
-map('', '<C-w>', '<cmd>close<cr>', {})
-map('', '<C-t>', '<cmd>enew<cr>', {})
-map('', '<C-e>', '<cmd>bo split<cr>', {})
-map('', '<C-r>', '<cmd>bo vert split<cr>', {})
+-- -- -- Window Navigation
+-- map('', '<C-j>', '<C-w>h', {})
+-- map('', '<C-k>', '<C-w>k', {})
+-- map('', '<C-l>', '<C-w>j', {})
+-- map('', '<C-;>', '<C-w>l', {})
+-- map('', '<C-w>', '<cmd>close<cr>', {})
+-- map('', '<C-t>', '<cmd>enew<cr>', {})
+-- map('', '<C-e>', '<cmd>bo split<cr>', {})
+-- map('', '<C-r>', '<cmd>bo vert split<cr>', {})
 
 -- Canceling Search Mode
 map('', '\\', '<cmd>nohlsearch<cr>', {})
@@ -49,7 +49,7 @@ map('', '\\', '<cmd>nohlsearch<cr>', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})
-map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
+-- map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
 
 -- Code block Navigation
 map('n', '{', '{zz', {})
@@ -71,9 +71,9 @@ map('n', 'N', 'Nzz', {})
 -- map('n', '<', 'v<', {})
 -- map('n', '>', 'v>', {})
 
--- Redo in Normal Mode
-map('n', 'z', 'u', {})
-map('n', 'Z', '<C-r>', {})
+-- -- Redo in Normal Mode
+-- map('n', 'z', 'u', {})
+-- map('n', 'Z', '<C-r>', {})
 
 -- -- Delete and Yank to System Clipboard
 -- map('', 'd', '"0d', {})
