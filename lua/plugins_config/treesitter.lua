@@ -12,12 +12,12 @@ local config = function()
                     ["ia"] = "@parameter.inner",
                     ["aa"] = "@parameter.outer",
                 },
-                selection_modes = {
-                    ['@parameter.outer'] = 'v', -- charwise
-                    ['@function.outer'] = 'V', -- linewise
-                    ['@class.outer'] = '<c-v>', -- blockwise
-                },
-                include_surrounding_whitespace = true,
+                -- selection_modes = {
+                --     ['@parameter.outer'] = 'v', -- charwise
+                --     ['@function.outer'] = 'V', -- linewise
+                --     ['@class.outer'] = '<c-v>', -- blockwise
+                -- },
+                include_surrounding_whitespace = false,
             },
         },
         incremental_selection = {

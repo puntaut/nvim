@@ -36,9 +36,7 @@ local config = function()
 
     -- Indentation
     keymap({ "o", "x" }, "ii", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
-    -- keymap({ "o", "x" }, "oO", "<cmd>lua require('various-textobjs').indentation(true, false)<CR>")
     keymap({ "o", "x" }, "ai", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
-    -- keymap({ "o", "x" }, "uO", "<cmd>lua require('various-textobjs').indentation(false, true)<CR>")
 
     -- Subword
     keymap({ "o", "x" }, "iS", "<cmd>lua require('various-textobjs').subword(true)<CR>")

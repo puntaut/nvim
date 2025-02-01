@@ -81,7 +81,7 @@ local config = function()
 
     vim.keymap.set('n', '<leader>/', builtin.current_buffer_fuzzy_find, {})
     vim.keymap.set('n', '<leader>rs', builtin.resume, {})
-    vim.keymap.set('n', '<leader>tt', builtin.find_files, {})
+    vim.keymap.set('n', '<leader>tf', builtin.find_files, {})
     vim.keymap.set('n', '<leader>tg', builtin.live_grep, {})
     vim.keymap.set('n', '<leader>tb', builtin.buffers, {})
     vim.keymap.set('n', '<leader>tp', builtin.oldfiles, {})
