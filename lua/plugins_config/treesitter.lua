@@ -7,8 +7,8 @@ local config = function()
                 enable = true,
                 lookahead = true,
                 keymaps = {
-                    ["if"] = "@function.inner",
-                    ["af"] = "@function.outer",
+                    -- ["if"] = "@function.inner",
+                    -- ["af"] = "@function.outer",
                     ["ia"] = "@parameter.inner",
                     ["aa"] = "@parameter.outer",
                 },
@@ -43,12 +43,16 @@ local config = function()
 end
 
 return {
-    -- Syntax
-    "nvim-treesitter/nvim-treesitter",
-    config = config,
-    -- TextObjects
-    dependencies = {
+    {
+        -- Syntax
+        "nvim-treesitter/nvim-treesitter",
+        config = config,
+    },
+    {
+        -- TextObjects
         "nvim-treesitter/nvim-treesitter-textobjects",
-        "chrisgrieser/nvim-various-textobjs",
-    }
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+        }
+    },
 }

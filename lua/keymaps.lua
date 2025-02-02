@@ -11,7 +11,11 @@ map('', 'j', 'h', {})
 map('', 'k', 'k', {})
 map('', 'l', 'j', {})
 map('', ';', 'l', {})
---
+
+-- -- Redo Undo move
+-- map('', "'", ';', {})
+-- map('', '"', ',', {})
+
 -- -- -- Window Navigation
 -- -- map('', '<leader>d', '<C-w>h', {})
 -- -- map('', '<leader>e', '<C-w>k', {})
@@ -49,7 +53,7 @@ map('', '\\', '<cmd>nohlsearch<cr>', {})
 
 -- Change In Word Using Enter
 map('n', '<CR>', '"_ciw', {})
--- map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
+map('n', '<S-CR>', '"_c<cmd>lua require("various-textobjs").subword(true)<CR>', {})
 
 -- Code block Navigation
 map('n', '{', '{zz', {})

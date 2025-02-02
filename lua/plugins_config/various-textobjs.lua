@@ -1,46 +1,19 @@
 local config = function()
     require("various-textobjs").setup {
-        disabledKeymaps = {
-            "ik",
-            "ak",
-            "iv",
-            "av",
-            "L",
-            "in",
-            "an",
-            "iz",
-            "az",
-            "im",
-            "am",
-            "!",
-            "gw",
-            "gW",
-            "il",
-            "al",
-            "ic",
-            "ac",
-            "iC",
-            "aC",
-            "ix",
-            "ax",
-            "i/",
-            "a/",
-            "iD",
-            "aD",
-            "iP",
-            "aP",
+        keymaps = {
+            useDefaults = false,
         },
     }
 
     local keymap = vim.keymap.set
 
     -- Indentation
-    keymap({ "o", "x" }, "ii", "<cmd>lua require('various-textobjs').indentation(true, true)<CR>")
-    keymap({ "o", "x" }, "ai", "<cmd>lua require('various-textobjs').indentation(false, false)<CR>")
+    keymap({ "o", "x" }, "ii", "<cmd>lua require('various-textobjs').indentation('inner', 'inner')<CR>")
+    keymap({ "o", "x" }, "ai", "<cmd>lua require('various-textobjs').indentation('outer', 'outer')<CR>")
 
     -- Subword
-    keymap({ "o", "x" }, "iS", "<cmd>lua require('various-textobjs').subword(true)<CR>")
-    keymap({ "o", "x" }, "aS", "<cmd>lua require('various-textobjs').subword(false)<CR>")
+    keymap({ "o", "x" }, "iS", "<cmd>lua require('various-textobjs').subword('inner')<CR>")
+    keymap({ "o", "x" }, "aS", "<cmd>lua require('various-textobjs').subword('inner')<CR>")
 
     -- Line
     keymap({ "o", "x" }, "il", "<cmd>lua require('various-textobjs').lineCharacterwise(true)<CR>")

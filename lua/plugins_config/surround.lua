@@ -7,7 +7,7 @@ require("nvim-surround").setup {
         delete = "ds",
         change = "cs",
         normal_line = "gS",
-        normal_cur_line = "gS",
+        normal_cur_line = "gSS",
         visual_line = "gS",
         change_line = "cS",
     },

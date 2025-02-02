@@ -11,7 +11,7 @@ return {
             -- ['<C-space>'] = { 'show_documentation', 'hide_documentation' },
             ['<C-f>h'] = { 'hide' },
 
-            ['<S-CR>'] = { 'select_and_accept' },
+            -- ['<S-CR>'] = { 'select_and_accept' },
             ['<C-y>'] = { 'select_and_accept' },
 
             ['<Up>'] = { 'select_prev', 'fallback' },
