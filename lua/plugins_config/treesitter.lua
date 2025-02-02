@@ -7,8 +7,8 @@ local config = function()
                 enable = true,
                 lookahead = true,
                 keymaps = {
-                    -- ["if"] = "@function.inner",
-                    -- ["af"] = "@function.outer",
+                    ["if"] = "@function.inner",
+                    ["af"] = "@function.outer",
                     ["ia"] = "@parameter.inner",
                     ["aa"] = "@parameter.outer",
                 },
@@ -18,6 +18,22 @@ local config = function()
                 --     ['@class.outer'] = '<c-v>', -- blockwise
                 -- },
                 include_surrounding_whitespace = false,
+            },
+            move = {
+                enable = true,
+                set_jump = true,
+                goto_next_start = {
+                    ["]a"] = "@parameter.inner",
+                },
+                goto_previous_start = {
+                    ["[a"] = "@parameter.inner",
+                },
+                goto_next_end = {
+                    ["]A"] = "@parameter.inner",
+                },
+                goto_previous_end = {
+                    ["[A"] = "@parameter.inner",
+                },
             },
         },
         incremental_selection = {
