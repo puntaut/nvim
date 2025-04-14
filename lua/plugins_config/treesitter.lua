@@ -56,6 +56,12 @@ local config = function()
             use_languagetree = true,
         },
     }
+    -- local ts_repeat_move = require "nvim-treesitter.textobjects.repeatable_move"
+
+    -- -- Repeat movement with ; and ,
+    -- -- ensure ; goes forward and , goes backward regardless of the last direction
+    -- vim.keymap.set({ "n", "x", "o" }, "'", ts_repeat_move.repeat_last_move_next)
+    -- vim.keymap.set({ "n", "x", "o" }, '"', ts_repeat_move.repeat_last_move_previous)
 end
 
 return {
@@ -69,6 +75,7 @@ return {
         "nvim-treesitter/nvim-treesitter-textobjects",
         dependencies = {
             "nvim-treesitter/nvim-treesitter",
-        }
+            "backdround/improved-ft.nvim", -- THIS IS FOR using repeated move purpose
+        },
     },
 }

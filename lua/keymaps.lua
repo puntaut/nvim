@@ -79,23 +79,23 @@ map('n', 'N', 'Nzz', {})
 -- map('n', 'z', 'u', {})
 -- map('n', 'Z', '<C-r>', {})
 
--- -- Delete and Yank to System Clipboard
+-- Delete and Yank to System Clipboard
 -- map('', 'd', '"0d', {})
 -- map('n', 'dd', '"0dd', {})
--- map('', 'D', '"_d', {})
--- map('n', 'DD', '"_dd', {})
+map('', 'D', '"_d', {})
+map('n', 'DD', '"_dd', {})
 
--- -- Change but not Yank to System Clipboard
--- map('', 'c', '"_c', {})
--- map('n', 'cc', '"_cc', {})
+-- Change but not Yank to System Clipboard
+map('', 'c', '"_c', {})
+map('n', 'cc', '"_cc', {})
 -- map('', 'C', '"0c', {})
 -- map('n', 'CC', '"0cc', {})
 
--- -- -- Map for macro
--- -- map('n', 'X', '@x', {})
--- -- map('n', 'S', '@s', {})
--- map('n', '@', '@@', {})
--- map('n', 'Q', '@q', {})
+-- -- Map for macro
+-- map('n', 'X', '@x', {})
+-- map('n', 'S', '@s', {})
+map('n', '@', '@@', {})
+map('n', 'Q', '@q', {})
 
 -- -- -- Change but not Yank to System Clipboard
 -- map('', 'S', '"_s', {})
@@ -157,7 +157,7 @@ map('', 'K', '6k', {})
 map('', 'L', '6j', {})
 
 -- Save and Close Buffer
-map('', 'W', '<Cmd>bd<CR>', {})
+-- map('', 'W', '<Cmd>bd<CR>', {})
 map('', '<D-s>', '<Cmd>update<CR>', {})
 -- map('', '<D-w>', '<Cmd>bd<CR>', {})
 -- map('', '<D-s>', '<Cmd>w<CR>', {})
