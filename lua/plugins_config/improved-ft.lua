@@ -13,8 +13,8 @@ local config = function()
     map("t", ft.hop_forward_to_pre_char, "Hop forward before a given char")
     map("T", ft.hop_backward_to_pre_char, "Hop backward before a given char")
 
-    map("'", ft.repeat_forward, "Repeat hop forward to a last given char")
-    map('"', ft.repeat_backward, "Repeat hop backward to a last given char")
+    map(";", ft.repeat_forward, "Repeat hop forward to a last given char")
+    map(",", ft.repeat_backward, "Repeat hop backward to a last given char")
 end
 
 return {

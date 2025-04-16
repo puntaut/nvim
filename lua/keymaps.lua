@@ -6,11 +6,11 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
--- Arrow Navigation
-map('', 'j', 'h', {})
-map('', 'k', 'k', {})
-map('', 'l', 'j', {})
-map('', ';', 'l', {})
+-- -- Arrow Navigation
+-- map('', 'j', 'h', {})
+-- map('', 'k', 'k', {})
+-- map('', 'l', 'j', {})
+-- map('', ';', 'l', {})
 
 -- -- Redo Undo move
 -- map('', "'", ';', {})
@@ -150,11 +150,11 @@ map('x', 'y', 'may`a', {})
 -- map('n', '~', '~h', {})
 -- map('n', '~~', 'V~', {})
 
--- -- Scroll Up and Scroll Down
--- map('', 'E', '2kzz', {})
--- map('', 'A', '2jzz', {})
-map('', 'K', '6k', {})
-map('', 'L', '6j', {})
+-- -- -- Scroll Up and Scroll Down
+-- -- map('', 'E', '2kzz', {})
+-- -- map('', 'A', '2jzz', {})
+-- map('', 'K', '6k', {})
+-- map('', 'L', '6j', {})
 
 -- Save and Close Buffer
 -- map('', 'W', '<Cmd>bd<CR>', {})
