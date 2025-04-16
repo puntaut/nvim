@@ -153,8 +153,8 @@ map('x', 'y', 'may`a', {})
 -- -- -- Scroll Up and Scroll Down
 -- -- map('', 'E', '2kzz', {})
 -- -- map('', 'A', '2jzz', {})
--- map('', 'K', '6k', {})
--- map('', 'L', '6j', {})
+map('', 'K', '6k', {})
+map('', 'J', '6j', {})
 
 -- Save and Close Buffer
 -- map('', 'W', '<Cmd>bd<CR>', {})
