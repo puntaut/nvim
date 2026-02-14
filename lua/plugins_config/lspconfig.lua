@@ -23,6 +23,10 @@ local config = function()
         filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
         capabilities = capabilities
     })
+    lspconfig.svls.setup({
+        filetypes = { "verilog", "systemverilog" },
+        capabilities = capabilities
+    })
     lspconfig.lua_ls.setup {
         settings = {
             Lua = {
