@@ -6,6 +6,16 @@ local function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+
+-- Press <leader>tv to toggle Virtual Text on and off
+--
+vim.keymap.set('n', '<leader>tv', function()
+    local config = vim.diagnostic.config()
+    local new_state = not config.virtual_text
+    vim.diagnostic.config({ virtual_text = new_state })
+    print("Diagnostic Text: " .. (new_state and "ON" or "OFF"))
+end, { desc = "Toggle Diagnostic Text" })
+
 -- -- Arrow Navigation
 -- map('', 'j', 'h', {})
 -- map('', 'k', 'k', {})

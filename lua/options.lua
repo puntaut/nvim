@@ -81,6 +81,7 @@ vim.o.guicursor = "n-v-c-sm:block,i-c-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-bl
 
 -- This configured directly to nvim diagnostic config
 vim.diagnostic.config({
+    virtual_text = true,
     signs = {
         text = {
             [vim.diagnostic.severity.ERROR] = '┃', -- or other icon of your choice here, this is just what my config has:
