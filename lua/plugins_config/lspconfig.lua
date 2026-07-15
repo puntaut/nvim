@@ -1,43 +1,57 @@
 local config = function()
-    local lspconfig = require('lspconfig')
-    local capabilities = require('blink.cmp').get_lsp_capabilities()
-    -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-    lspconfig.basedpyright.setup({ capabilities = capabilities })
-    lspconfig.ruff.setup({ capabilities = capabilities })
-    lspconfig.jsonls.setup({ capabilities = capabilities })
-    -- lspconfig.superhtml.setup({
-    --     capabilities = capabilities
-    -- })
-    lspconfig.jdtls.setup({
+    -- Python
+    vim.lsp.config("basedpyright", {
+        capabilities = capabilities,
+    })
+    vim.lsp.enable("basedpyright")
+
+    vim.lsp.config("ruff", {
+        capabilities = capabilities,
+    })
+    vim.lsp.enable("ruff")
+
+    -- JSON
+    vim.lsp.config("jsonls", {
+        capabilities = capabilities,
+    })
+    vim.lsp.enable("jsonls")
+
+    -- Java
+    vim.lsp.config("jdtls", {
+        capabilities = capabilities,
         handlers = {
-            ['language/status'] = function(_, result)
-                vim.print('***')
-            end,
-            ['$/progress'] = function(_, result, ctx)
-                vim.print('---')
-            end,
+            ["language/status"] = function() end,
+            ["$/progress"] = function() end,
         },
-        capabilities = capabilities
     })
-    lspconfig.clangd.setup({
+    vim.lsp.enable("jdtls")
+
+    -- C/C++
+    vim.lsp.config("clangd", {
+        capabilities = capabilities,
         filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-        capabilities = capabilities
     })
-    lspconfig.svls.setup({
+    vim.lsp.enable("clangd")
+
+    -- SystemVerilog
+    vim.lsp.config("svls", {
+        capabilities = capabilities,
         filetypes = { "verilog", "systemverilog" },
-        capabilities = capabilities
     })
-    lspconfig.lua_ls.setup {
+    vim.lsp.enable("svls")
+
+    -- Lua
+    vim.lsp.config("lua_ls", {
+        capabilities = capabilities,
         settings = {
             Lua = {
                 runtime = {
                     version = "LuaJIT",
                 },
                 diagnostics = {
-                    globals = {
-                        "vim",
-                    },
+                    globals = { "vim" },
                 },
                 workspace = {
                     library = vim.api.nvim_get_runtime_file("", true),
@@ -48,25 +62,16 @@ local config = function()
                 },
             },
         },
-        capabilities = capabilities,
-    }
+    })
+    vim.lsp.enable("lua_ls")
 
     vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", {}),
         callback = function(ev)
-            -- Enable completion triggered by <c-x><c-o>
             vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
-            -- Buffer local mappings.
-            -- See `:help vim.lsp.*` for documentation on any of the below functions
             local opts = { buffer = ev.buf }
-            -- vim.keymap.set("n", "O", vim.lsp.buf.hover, opts)
-            -- vim.keymap.set("n", "od", vim.lsp.buf.definition, opts)
-            -- vim.keymap.set("n", "oD", vim.lsp.buf.declaration, opts)
-            -- vim.keymap.set("n", "ot", vim.lsp.buf.type_definition, opts)
-            -- vim.keymap.set("n", "oi", vim.lsp.buf.implementation, opts)
-            -- vim.keymap.set("n", "<space>n", vim.diagnostic.goto_next, opts)
-            -- vim.keymap.set("n", "<space>N", vim.diagnostic.goto_prev, opts)
+
             vim.keymap.set("n", "<space>li", vim.lsp.buf.implementation, opts)
             vim.keymap.set("n", "<space>ls", vim.lsp.buf.signature_help, opts)
             vim.keymap.set("n", "<space>wa", vim.lsp.buf.add_workspace_folder, opts)
@@ -88,7 +93,7 @@ end
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
-        "Saghen/blink.cmp"
+        "Saghen/blink.cmp",
     },
     config = config,
 }
